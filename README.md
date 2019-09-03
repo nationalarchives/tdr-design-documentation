@@ -3,23 +3,19 @@ Design decisions and wireframe changes
 
 
 
-We are using the GOV.UK Design System: https://design-system.service.gov.uk/ 
-
-Edit: We are going to use the new TNA Design System that is going to be created for Legislation and all TNA digital services.
-
-
-
-We are focusing (for now) on Persona Robert, the transferring body in other government departments.
+We are using the GOV.UK Design System: https://design-system.service.gov.uk/  
+Edit: We are going to use the new TNA Design System that is going to be created for Legislation and all TNA digital services.  
 
 
 
-The user journey is divided in three phases: 
+We are focusing (for now) on Persona Robert, the transferring body in other government departments.  
 
-1 Login + Upload 
 
-2 Processing
 
-3 Transfer
+The user journey is divided in three phases:  
+1 Login + Upload  
+2 Processing  
+3 Transfer  
 
 
 
