@@ -42,7 +42,12 @@ Upload:
 - The user needs to be able to resume a transfer
 - Both bulk upload and the ability to select individual files is a requirement
 
-Processing/Transfer:
+Processing:
+- Processing starts with the upload of the first file
+- Upload and Processing run parallel
+- To show progress in a progressbar (with percentage) is possible 
+- To display the time remaining to the user is not feasible (because it depends on e.g. how many other users are uploading files at the same time)
+- If there is a fail, we let the user know what the fail is related to and suggest an action
 - There is a business need to capture as much descriptive/contextual data as possible - on file and consignment level
 
 Transfer:
@@ -59,7 +64,12 @@ Upload:
 - Unlike MVP, we will not offer to resume or view history on dashboard
 - Free text input field for series ID
 
-Processing/Transfer:
+Processing:
+- Processing starts with the upload of the first file
+- Upload and Processing run parallel
+- To show progress in a progressbar (with percentage) is possible 
+- To display the time remaining to the user is not feasible (because it depends on e.g. how many other users are uploading files at the same time)
+- If there is a fail,  the user has to start again
 - Unlike MVP, we will not capture any additional data
 
 Transfer:
