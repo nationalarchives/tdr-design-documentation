@@ -40,6 +40,8 @@ The user journey is divided in three phases:
 #### MVP design decisions:
 Upload: 
 - The user needs to be able to resume a transfer
+- 'Service Agreements' is now called 'Transfer Agreement' (agreed with Nicki)
+For the questions, we will use more direct,  plain language e.g. The records are all in English.
 - Both bulk upload and the ability to select individual files is a requirement
 
 Processing:
@@ -61,16 +63,14 @@ Transfer:
 #### P.O.C. design decisions:
 
 Upload:
-- Unlike MVP, we will not offer to resume or view history on dashboard
+Same as MVP, expcept
+- We will not offer to resume or view history on dashboard
 - Free text input field for series ID
 
 Processing:
-- Processing starts with the upload of the first file
-- Upload and Processing run parallel
-- To show progress in a progressbar (with percentage) is possible 
-- To display the time remaining to the user is not feasible (because it depends on e.g. how many other users are uploading files at the same time)
+Same as MVP, expcept
 - If there is a fail,  the user has to start again
-- Unlike MVP, we will not capture any additional data
+- We will not capture any additional data
 
 Transfer:
 - The user only needs to confirm his/her selection of records before transferring
