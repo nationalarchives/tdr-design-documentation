@@ -4,7 +4,8 @@ Design decisions and wireframe changes
 
 
 We are using the GOV.UK Design System: https://design-system.service.gov.uk/  
-Edit: We are going to use the new TNA Design System that is going to be created for Legislation and all TNA digital services.  
+Edit: We are going to use the new TNA Design System that is going to be created for Legislation and all TNA digital services. 
+Edit: We will be testing if users prefer the GOV.UK or the TNA design and why.
 
 
 
