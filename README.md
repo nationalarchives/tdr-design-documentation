@@ -77,6 +77,24 @@ Transfer:
 
 
 
+## User Testing Results
 
+#### 23/09/2019 Learnings
+1. No one asked about the login details.
+2. Dashboard was fine either way.
+3. No one asked about how to collaborate.
+4. ‘Transfer agreement’ is understood and questions are tolerated.
+5. DRO could be a stopper in the process.
+6. Optional fields were not noticed as such.
+7. Historic value needs clarification.
+8. Consignment needs clarification.
+9. Upload with G Suite and other systems are expected.
+10. Browse is commonly used.
+11. Relation between 1 folder and 3 files (in this example) needs clarification.
+12. Processing error message needs to be clear and helpful for users to be handled on their own.
+13. Review is useful.
+14. Review checkboxes were tolerated.
+15. ‘Do not delete your copies’ warning is well placed.
+16. User expects to be notified by email about when transfer was safe and copies can be deleted.
 
 
