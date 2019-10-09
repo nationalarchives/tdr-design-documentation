@@ -3,10 +3,13 @@ Design decisions and wireframe changes
 
 
 
-We are using the GOV.UK Design System: https://design-system.service.gov.uk/  
-Edit: We are going to use the new TNA Design System that is going to be created for Legislation and all TNA digital services. 
+We are working on 3 brand designs:
+- GOV.UK Design System: https://design-system.service.gov.uk/  
+- TNA Design System (one that is just being created for Legislation and all TNA digital services)
+- Hybrid
 
-Edit: We will be testing if users prefer the GOV.UK or the TNA design and why.
+The working prototype is in the GOV.UK design but no final decisions have been made.
+(The decision will be as a result of business requirements, senior stakeholders and users responses to the designs.)
 
 
 
@@ -82,24 +85,18 @@ Transfer:
 
 
 
-## User Testing Results
+## User testing results for the design
 
-#### 23/09/2019 Learnings
-1. No one asked about the login details.
-2. Dashboard was fine either way.
-3. No one asked about how to collaborate.
-4. ‘Transfer agreement’ is understood and questions are tolerated.
-5. DRO could be a stopper in the process.
-6. Optional fields were not noticed as such.
-7. Historic value needs clarification.
-8. Consignment needs clarification.
-9. Upload with G Suite and other systems are expected.
-10. Browse is commonly used.
-11. Relation between 1 folder and 3 files (in this example) needs clarification.
-12. Processing error message needs to be clear and helpful for users to be handled on their own.
-13. Review is useful.
-14. Review checkboxes were tolerated.
-15. ‘Do not delete your copies’ warning is well placed.
-16. User expects to be notified by email about when transfer was safe and copies can be deleted.
+#### 23/09/2019 
+- Optional fields were not noticed as such -> need to be more obvious
+- Historic was not clear to users -> needs clarification or to be taken out
+- Consignment was not familiar to users -> needs clarification and maybe moved to the beginning
+- Upload with G Suite and other systems are expected -> will be integrated later
+- Browse is commonly used -> Drag and drop can be removed as it only makes this process more complicated
+- Processing error message was not clear to users -> needs to be helpful for users to be handled on their own
+- Processing success message seems a little bit like the end -> maybe go straight to Review page
+- Review is useful -> keep
+- ‘Do not delete your copies’ warning is well placed -> keep
+- User expects to be notified by email about when transfer was safe and copies can be deleted -> will be integrated later
 
 
