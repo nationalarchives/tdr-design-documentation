@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>TDR New Transfer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" media="screen" href="stylesheets/base-sass.css">
+  <link rel="stylesheet" media="screen" href="stylesheets/tna.css">
+  <link rel="stylesheet" media="screen" href="stylesheets/toolkit.css">
+  <link rel="stylesheet" media="screen" href="stylesheets/styles.css">
+
+  <link rel="stylesheet" media="screen" href="stylesheets/_background-variant.scss">
+  <link rel="stylesheet" media="screen" href="stylesheets/_border-radius.scss">
+  <link rel="stylesheet" media="screen" href="stylesheets/_breadcrumbs.scss">
+  <link rel="stylesheet" media="screen" href="stylesheets/_button-groups.scss">
+  <link rel="stylesheet" media="screen" href="stylesheets/_buttons.scss">
+  <link rel="stylesheet" media="screen" href="stylesheets/_cards.scss">
+  <link rel="stylesheet" media="screen" href="stylesheets/_category.scss">
+  <link rel="stylesheet" media="screen" href="stylesheets/_center-block.scss">
+  <link rel="stylesheet" media="screen" href="stylesheets/_clearfix.scss">
+  <link rel="stylesheet" media="screen" href="stylesheets/_close.scss">
+  <link rel="stylesheet" media="screen" href="stylesheets/_code.scss">
+  <link rel="stylesheet" media="screen" href="stylesheets/_colours.scss">
+  <link rel="stylesheet" media="screen" href="stylesheets/_comments.scss">
+  <link rel="stylesheet" media="screen" href="stylesheets/_component-animations.scss">
+  <link rel="stylesheet" media="screen" href="stylesheets/_footer.scss">
+  <link rel="stylesheet" media="screen" href="stylesheets/_forms.scss">
+  <link rel="stylesheet" media="screen" href="stylesheets/_global.scss">
+  <link rel="stylesheet" media="screen" href="stylesheets/_glyphicons.scss">
+  <link rel="stylesheet" media="screen" href="stylesheets/_grid.scss">
+  <link rel="stylesheet" media="screen" href="stylesheets/_grid-framework.scss">
+  <link rel="stylesheet" media="screen" href="stylesheets/_header.scss">
+  <link rel="stylesheet" media="screen" href="stylesheets/_hide-text.scss">
+  <link rel="stylesheet" media="screen" href="stylesheets/_icons.scss">
+  <link rel="stylesheet" media="screen" href="stylesheets/_image.scss">
+  <link rel="stylesheet" media="screen" href="stylesheets/_images.scss">
+  <link rel="stylesheet" media="screen" href="stylesheets/_list-group.scss">
+  <link rel="stylesheet" media="screen" href="stylesheets/_media.scss">
+  <link rel="stylesheet" media="screen" href="stylesheets/_mixin.scss">
+  <link rel="stylesheet" media="screen" href="stylesheets/_normalize.scss">
+  <link rel="stylesheet" media="screen" href="stylesheets/_portal.scss">
+  <link rel="stylesheet" media="screen" href="stylesheets/_print.scss">
+  <link rel="stylesheet" media="screen" href="stylesheets/_scaffolding.scss">
+  <link rel="stylesheet" media="screen" href="stylesheets/_tables.scss">
+  <link rel="stylesheet" media="screen" href="stylesheets/_table-row.scss">
+  <link rel="stylesheet" media="screen" href="stylesheets/_tab-focus.scss">
+  <link rel="stylesheet" media="screen" href="stylesheets/_templates.scss">
+  <link rel="stylesheet" media="screen" href="stylesheets/_text-emphasis.scss">
+  <link rel="stylesheet" media="screen" href="stylesheets/_text-overflow.scss">
+  <link rel="stylesheet" media="screen" href="stylesheets/_type.scss">
+  <link rel="stylesheet" media="screen" href="stylesheets/_typography.scss">
+  <link rel="stylesheet" media="screen" href="stylesheets/_utilities.scss">
+  <link rel="stylesheet" media="screen" href="stylesheets/_variables.scss">
+  <link rel="stylesheet" media="screen" href="stylesheets/_wells.scss">
+</head>
+
+<body class="home page-template page-template-page-home page-template-page-home-php page page-id-2">
+
+  <header id="header" role="banner">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-2 col-sm-5" id="logo-holder">
+          <button aria-label="Toggle menu" id="mega-menu-mobile"></button>
+          <a href="#" title="Go to The National Archives homepage" class="visible-lg visible-md visible-sm">
+            <img src="logo.png" srcset="logo.png" alt="The National Archives" class="img-responsive logo">
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </header>
+
+  <main id="primary" role="main" class="content-area" style="margin-bottom: 60px;">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+
+          <!-- Progress indicator -->
+          <p><small>Step 1 of 5</small></p>
+          <!-- Headline -->
+          <h1 class="govuk-heading-xl">Transfer Agreement</h1>
+
+
+          <form action="/serviceAgreements/submit" method="POST">
+
+            <!-- Compliance -->
+            <fieldset>
+              <div class="">
+                <label class="govuk-label">
+                  The records are all Public Records
+                </label>
+                <div style="display: flex;" id="publicRecord">
+                  <div style="margin-right: 20px;" class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="publicRecordyes" name="publicRecord" type="radio" value="yes" required="">
+                    <label class="govuk-label govuk-radios__label" for="publicRecordyes">
+                      Yes
+                    </label>
+                  </div>
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="publicRecordno" name="publicRecord" type="radio" value="no" disabled="" required="">
+                    <label style="color: gray;" class="govuk-label govuk-radios__label" for="publicRecordno">
+                      No
+                    </label>
+                  </div>
+                </div>
+
+                <label class="govuk-label">
+                  The records are all Crown Copyright
+                </label>
+                <div style="display: flex;" id="crownCopyright">
+                  <div style="margin-right: 20px;" class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="crownCopyrightyes" name="crownCopyright" type="radio" value="yes" required="">
+                    <label class="govuk-label govuk-radios__label" for="crownCopyrightyes">
+                      Yes
+                    </label>
+                  </div>
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="crownCopyrightno" name="crownCopyright" type="radio" value="no" disabled="" required="">
+                    <label style="color: gray;" class="govuk-label govuk-radios__label" for="crownCopyrightno">
+                      No
+                    </label>
+                  </div>
+                </div>
+
+                <label class="govuk-label">
+                  The records are all in English
+                </label>
+                <div style="display: flex;" id="english">
+                  <div style="margin-right: 20px;" class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="englishyes" name="english" type="radio" value="yes" required="">
+                    <label class="govuk-label govuk-radios__label" for="englishyes">
+                      Yes
+                    </label>
+                  </div>
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="englishno" name="english" type="radio" value="no" disabled="" required="">
+                    <label style="color: gray;" class="govuk-label govuk-radios__label" for="englishno">
+                      No
+                    </label>
+                  </div>
+                </div>
+
+                <label class="govuk-label">
+                  The  records are all Digital
+                </label>
+                <div style="display: flex;" id="digital">
+                  <div style="margin-right: 20px;" class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="digitalyes" name="digital" type="radio" value="yes" required="">
+                    <label class="govuk-label govuk-radios__label" for="digitalyes">
+                      Yes
+                    </label>
+                  </div>
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="digitalno" name="digital" type="radio" value="no" disabled="" required="">
+                    <label style="color: gray;" class="govuk-label govuk-radios__label" for="digitalno">
+                      No
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+
+
+            <!-- DRO confirmation -->
+            <fieldset class="govuk-fieldset" aria-describedby="transfer-agreement-checks">
+
+              <div class="form-row checkbox">
+                  <div class="govuk-checkboxes__item govuk-checkboxes--small">
+                    <input required="" class="govuk-checkboxes__input" id="droAppraisalselection" name="droAppraisalselection" type="checkbox" value="yes">
+                    <label style="display: inline;" class="govuk-label govuk-checkboxes__label" for="droAppraisalselection">
+                      I confirm that the DRO has signed off on the appraisal and selection decision.
+                    </label>
+                  </div>
+              </div>
+
+                <div class="form-row checkbox">
+                  <div class="govuk-checkboxes__item govuk-checkboxes--small">
+                    <input required="" class="govuk-checkboxes__input" id="droSensitivity" name="droSensitivity" type="checkbox" value="yes">
+                    <label style="display: inline;" class="govuk-label govuk-checkboxes__label" for="droSensitivity">
+                      I confirm that the DRO has signed off on the sensitivity review decision - including that all records in this transfer are only up to official-sensitive.
+                    </label>
+                  </div>
+                </div>
+
+            </fieldset>
+
+            <!-- Buttons -->
+            <div>
+              <!-- Cancel -->
+              <a class="tna-button tna-button--secondary" role="button" href="dashboard.html">
+                <span>Cancel</span>
+              </a>
+
+              <!-- Continue -->
+              <a class="button" role="button" href="series-details.html">
+                <span>Save and continue</span>
+              </a>
+            </div>
+
+          </form>
+
+
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+
+  <footer>
+      <div class="container">
+          <div class="row">
+              <div class="col-4">
+                  <ul class="tna-ul--no-bullet">
+                      <li><a href="#">Contact us</a></li>
+                      <li><a href="#">Help</a></li>
+                      <li><a href="#">Site map</a></li>
+                      <li><a href="#">Accessibility</a></li>
+                  </ul>
+              </div>
+              <div class="col-4">
+                  <ul class="tna-ul--no-bullet">
+                      <li><a href="#">Officially printed and bound copies</a></li>
+                      <li><a href="#">Cookies</a></li>
+                      <li><a href="#">Privacy notice</a></li>
+                  </ul>
+              </div>
+              <div class="col-4 footer-logo">
+                  <img src="logo-square.png" alt="The National Archives" class="img-fluid">
+              </div>
+          </div>
+          <div class="row footer-details">
+              <div class="col-6">
+                  <p><small>All content is available under the Open Government Licence v3.0, except where otherwise stated</small></p>
+              </div>
+              <div class="col-6" style="text-align: right">
+                  <p><small>© Crown copyright</small></p>
+              </div>
+          </div>
+      </div>
+  </footer>
+
+
+</body>
+
+</html>
