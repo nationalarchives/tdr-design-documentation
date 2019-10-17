@@ -1,0 +1,201 @@
+html {
+ box-sizing: border-box;
+}
+/* *, *:before, *:after {
+ box-sizing: inherit;
+} */
+
+body {
+ font-family: Arial, sans-serif;
+}
+
+
+/*---------------------------------------------------------------------------------------------------*/
+/* Upload */
+
+/* Drag and Drop initial */
+.govuk-file-drop {
+  padding: 10%;
+  justify-content: center;
+  text-align: center;
+  margin: 20px 0;
+  align-items: center;
+  background-color: #ecf4fc;
+  outline: 2px dashed #1d70b8;
+  outline-offset: -10px;
+
+  font-size: 28px;
+}
+
+/* Drag and Drop on drag over */
+.govuk-file-drop-drag {
+    padding: 10%;
+    justify-content: center;
+    text-align: center;
+    margin: 20px 0;
+    align-items: center;
+    background-color: #fdfeff;
+    outline: 2px dashed #1d70b8;
+    outline-offset: -20px;
+
+    font-size: 28px;
+  }
+  
+  .govuk-file-upload {
+    font-family: "nta", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.25;
+    color: #0b0c0c;
+  }
+
+  /* Drag and Drop svg image */
+  .govuk-file-drop svg {
+      width: 100%;
+      fill: #6f777b;
+      display: block;
+      margin-bottom: 10px;
+  }
+
+    /* Drag and Drop span */
+  .draganddrop {
+      color: #6f777b;
+      font-size: 1.25rem;
+  }
+
+  /*---------------------------------------------------------------------------------------------------*/
+  /* TODO: Are those classes below needed? */
+  .govuk-form-group {
+    margin-bottom: 20px;
+  }
+  
+  .govuk-form-group:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  
+  @media (min-width: 40.0625em) {
+    .govuk-form-group {
+      margin-bottom: 30px;
+    }
+  }
+  
+  .govuk-form-group .govuk-form-group:last-of-type {
+    margin-bottom: 0;
+  }
+  
+  .govuk-form-group--error {
+    padding-left: 15px;
+    border-left: 5px solid #b10e1e;
+  }
+  
+  .govuk-form-group--error .govuk-form-group {
+    padding: 0;
+    border: 0;
+  }
+  
+
+/*---------------------------------------------------------------------------------------------------*/
+/* Processing */
+
+  progress[value] {
+      /* Get rid of the default appearance */
+      appearance: none;
+
+      /* This unfortunately leaves a trail of border behind in Firefox and Opera. We can remove that by setting the border to none. */
+      border: none;
+
+      /* Add dimensions */
+      width: 100%; height: 20px;
+
+      /* Although firefox doesn't provide any additional pseudo class to style the progress element container, any style applied here works on the container. */
+        background-color: whiteSmoke;
+        border-radius: 10px;
+        box-shadow: 0 2px 3px rgba(0,0,0,.5) inset;
+
+      /* Of all IE, only IE10 supports progress element that too partially. It only allows to change the background-color of the progress value using the 'color' attribute. */
+      color: royalblue;
+
+      position: relative;
+      margin: 0 0 1.5em;
+  }
+
+  progress[value]::-webkit-progress-bar {
+      background-color: whiteSmoke;
+      border-radius: 10px;
+      box-shadow: 0 2px 3px rgba(0,0,0,.5) inset;
+  }
+
+  progress[value]::-webkit-progress-value {
+      position: relative;
+      border-radius:10px;
+      background-color: #6f777b;
+
+  }
+
+  progress[value]::-moz-progress-bar {
+      background-color: #6f777b;
+      background-size: 35px 20px, 100% 100%, 100% 100%;
+      border-radius:10px;
+  }
+
+  /* .progress-complete {
+    height: 12em;
+    border: 1px solid;
+    border-radius: 1px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 13px;
+  } */
+
+  /* .iconify {
+    width: 10%;
+    height: 25%;
+    margin: 20px 0px 0px;
+    align-self: center;
+  } */
+
+  /* .complete-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+  } */
+
+  /* .iconspan {
+    padding: 5px 0px;
+  } */
+
+  .hide {
+    display: none;
+  }
+
+  .upload-form {
+      display: flex;
+      flex-direction: column;
+      font-size: 15px;
+   }
+
+  #success-summary {
+    border: 5px solid #00703c !important;
+  }
+
+
+/*---------------------------------------------------------------------------------------------------*/
+/* Confirmation */
+
+#warning-div {
+  margin: 35px 0 -15px 70px;
+}
+
+.warning-text {
+  color: #fff;
+}
+
+#warning-span {
+  background: none;
+  border: 3px solid #fff;
+}

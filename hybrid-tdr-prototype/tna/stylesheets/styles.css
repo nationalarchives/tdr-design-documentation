@@ -264,17 +264,14 @@ sup {
 }
 footer {
     padding: 1.6em 0;
-    background-color: #212529;
-    color: #fff;
+    /* background-color: #212529; */
+    color: black;
 }
 footer a {
-    color: #fff;
+    color: black;
 }
 footer a:hover {
-    color: #eee;
-}
-.footer-logo {
-    text-align: right;
+    color: black;
 }
 .footer-details {
     margin-top: 1em;
