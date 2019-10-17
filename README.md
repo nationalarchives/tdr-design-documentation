@@ -10,6 +10,8 @@ We are working on 3 brand designs:
 
 The working prototype is in the GOV.UK design but no final decisions have been made.
 (The decision will be as a result of business requirements, senior stakeholders and users responses to the designs.)
+We want to do user research to establish feelings of trust and security in using the new TNA design.
+2019-10-17: We are not going forward with the hybrid design.
 
 
 
