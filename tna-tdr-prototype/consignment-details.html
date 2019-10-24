@@ -34,7 +34,14 @@
         <div class="col-md-8">
 
           <!-- Back button -->
-          <p><a href="series-details.html">Back</a></p>
+          <a class="tna-button tna-button--secondary" role="button" href="series-details.html">
+              <span>Back</span>
+          </a>
+          <!-- Cancel button -->
+          <a class="tna-button tna-button--secondary" role="button" href="dashboard.html">
+              <span>Cancel</span>
+          </a>
+
           <!-- Progress indicator -->
           <p class="step-hint">Step 3 of 5</p>
           <!-- Headline -->
@@ -44,28 +51,28 @@
             <form name="signin" id="signin" action="" method="post" role="form">
               <fieldset>
                 <div class="form-row">
-                  <label for="cname">Consignment name*</label>
-                  <input type="text" name="cname" id="cname" placeholder="Enter a consignment name" aria-labelledby="">
+                  <label for="cname">Create a consignment reference*</label>
+                  <input type="text" name="cname" id="cname" placeholder="Enter a consignment reference" aria-labelledby="">
                 </div>
-                <div class="form-row">
+                <!-- OUT because this will always be the department the user works for. -->
+                <!-- <div class="form-row">
                   <label for="tbody">Transferring body*</label>
                   <input type="text" name="tbody" id="tbody" placeholder="Enter the transferring body" aria-labelledby="">
-                </div>
+                </div> -->
               </fieldset>
             </form>
           </div>
 
             <!-- Buttons -->
             <div>
-              <!-- Cancel -->
-              <a class="tna-button tna-button--secondary" role="button" href="dashboard.html">
-                <span>Cancel</span>
-              </a>
-
               <!-- Continue -->
               <a class="button" role="button" href="upload.html">
-                <span>Save and continue</span>
+                <span>Continue</span>
               </a>
+              <!-- Save for later -->
+              <!-- <a class="tna-button tna-button--secondary" role="button" href="dashboard.html">
+                <span>Save and resume later</span>
+              </a> -->
             </div>
 
           </form>

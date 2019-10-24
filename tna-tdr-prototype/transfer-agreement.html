@@ -7,6 +7,7 @@
   <link rel="stylesheet" media="screen" href="stylesheets/tna.css">
   <link rel="stylesheet" media="screen" href="stylesheets/toolkit.css">
   <link rel="stylesheet" media="screen" href="stylesheets/styles.css">
+  <!-- <link rel="stylesheet" media="screen" href="stylesheets/tna-forms.css"> -->
 </head>
 
 <body class="home page-template page-template-page-home page-template-page-home-php page page-id-2">
@@ -34,7 +35,14 @@
         <div class="col-md-8">
 
           <!-- Back button -->
-          <p><a href="dashboard.html">Back</a></p>
+          <a class="tna-button tna-button--secondary" role="button" href="dashboard.html">
+              <span>Back</span>
+          </a>
+          <!-- Cancel button -->
+          <a class="tna-button tna-button--secondary" role="button" href="dashboard.html">
+              <span>Cancel</span>
+          </a>
+
           <!-- Progress indicator -->
           <p class="step-hint">Step 1 of 5</p>
           <!-- Headline -->
@@ -136,7 +144,7 @@
               <div class="form-row checkbox">
                 <input required="" id="droSensitivity" name="droSensitivity" type="checkbox" value="yes">
                 <label for="droSensitivity">
-                  I confirm that the DRO has signed off on the sensitivity review decision - including that all records in this transfer are only up to official-sensitive.
+                  I confirm that the DRO has signed off on the sensitivity review and that all records in this transfer are OPEN i.e. no FOI exemptions apply to these records.
                 </label>
               </div>
 
@@ -144,15 +152,14 @@
 
             <!-- Buttons -->
             <div>
-              <!-- Cancel -->
-              <a class="tna-button tna-button--secondary" role="button" href="dashboard.html">
-                <span>Cancel</span>
-              </a>
-
               <!-- Continue -->
               <a class="button" role="button" href="series-details.html">
-                <span>Save and continue</span>
+                <span>Continue</span>
               </a>
+              <!-- Save for later -->
+              <!-- <a class="tna-button tna-button--secondary" role="button" href="dashboard.html">
+                <span>Save and resume later</span>
+              </a> -->
             </div>
 
           </form>

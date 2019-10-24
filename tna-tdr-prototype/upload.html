@@ -34,17 +34,24 @@
         <div class="col-md-8">
 
           <!-- Back button -->
-          <p><a href="consignment-details.html">Back</a></p>
+          <a class="tna-button tna-button--secondary" role="button" href="consignment-details.html">
+              <span>Back</span>
+          </a>
+          <!-- Cancel button -->
+          <a class="tna-button tna-button--secondary" role="button" href="dashboard.html">
+              <span>Cancel</span>
+          </a>
+
           <!-- Progress indicator -->
           <p class="step-hint">Step 4 of 5</p>
           <!-- Headline -->
-          <h1 class="govuk-heading-xl">Upload</h1>
+          <h1 class="govuk-heading-xl">Upload Your Records</h1>
 
           <div class="entry-content clearfix">
             <form name="signin" id="signin" action="" method="post" role="form">
               <fieldset>
                 <div class="form-row">
-                  <label for="cname">Select a folder</label>
+                  <label for="cname">Select a folder or zip file</label>
                   <a class="tna-button tna-button--primary" role="button" href="#">
                     <span>Browse...</span>
                   </a>
@@ -55,15 +62,14 @@
 
             <!-- Buttons -->
             <div>
-              <!-- Cancel -->
-              <a class="tna-button tna-button--secondary" role="button" href="dashboard.html">
-                <span>Cancel</span>
-              </a>
-
               <!-- Continue -->
               <a class="button" role="button" href="review.html">
                 <span>Upload now</span>
               </a>
+              <!-- Save for later -->
+              <!-- <a class="tna-button tna-button--secondary" role="button" href="dashboard.html">
+                <span>Save and resume later</span>
+              </a> -->
             </div>
 
           </form>

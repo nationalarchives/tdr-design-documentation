@@ -34,22 +34,29 @@
         <div class="col-md-8">
 
           <!-- Back button -->
-          <p><a href="series-details.html">Back</a></p>
+          <a class="tna-button tna-button--secondary" role="button" href="series-details.html">
+              <span>Back</span>
+          </a>
+          <!-- Cancel button -->
+          <a class="tna-button tna-button--secondary" role="button" href="dashboard.html">
+              <span>Cancel</span>
+          </a>
+
           <!-- Progress indicator -->
           <p class="step-hint">Step 2 of 5</p>
           <!-- Headline -->
-          <h1 class="govuk-heading-xl">Add New Series</h1>
+          <h1 class="govuk-heading-xl">Request a New Series</h1>
 
           <div class="entry-content clearfix">
             <form name="signin" id="signin" action="" method="post" role="form">
               <fieldset>
                 <div class="form-row">
-                  <label for="sname">Series name*</label>
-                  <input type="text" name="sname" id="sname" placeholder="Enter a series name" aria-labelledby="">
+                  <label for="sname">Series title*</label>
+                  <input type="text" name="sname" id="sname" placeholder="Enter a series title" aria-labelledby="">
                 </div>
                 <div class="form-row">
                   <label for="sdescription">Series description</label>
-                  <input type="text" name="sdescription" id="sdescription" placeholder="Enter a series description" aria-labelledby="">
+                  <textarea type="text" name="sdescription" id="sdescription" placeholder="Enter a series description" aria-labelledby=""></textarea>
                 </div>
               </fieldset>
             </form>
@@ -57,15 +64,14 @@
 
             <!-- Buttons -->
             <div>
-              <!-- Cancel -->
-              <a class="tna-button tna-button--secondary" role="button" href="dashboard.html">
-                <span>Cancel</span>
-              </a>
-
               <!-- Continue -->
-              <a class="button" role="button" href="consignment-details.html">
-                <span>Save and continue</span>
+              <a class="button" role="button" href="series-details.html">
+                <span>Continue</span>
               </a>
+              <!-- Save for later -->
+              <!-- <a class="tna-button tna-button--secondary" role="button" href="dashboard.html">
+                <span>Save and resume later</span>
+              </a> -->
             </div>
 
           </form>

@@ -34,7 +34,14 @@
         <div class="col-md-8">
 
           <!-- Back button -->
-          <p><a href="transfer-agreement.html">Back</a></p>
+          <a class="tna-button tna-button--secondary" role="button" href="transfer-agreement.html">
+              <span>Back</span>
+          </a>
+          <!-- Cancel button -->
+          <a class="tna-button tna-button--secondary" role="button" href="dashboard.html">
+              <span>Cancel</span>
+          </a>
+
           <!-- Progress indicator -->
           <p class="step-hint">Step 2 of 5</p>
           <!-- Headline -->
@@ -43,9 +50,8 @@
           <form action="/seriesDetails/submit" method="POST">
             <!-- Accruing Series -->
             <div class="form-row">
-              <h3 class="govuk-heading-m">Accruing series</h3>
               <label style="display: block;" class="govuk-label" for="seriesNo">
-                Series number*
+                Choose an existing series reference*
               </label>
               <select class="govuk-select" id="seriesNo" name="seriesNo">
                 <option value="placeholder" selected="">Please choose...</option>
@@ -61,21 +67,20 @@
             <!-- New Series -->
             <div class="form-row">
               <a href="add-series.html" class="govuk-link govuk-!-font-size-19">
-                Add new series
+                Request a new series
               </a>
             </div>
 
             <!-- Buttons -->
             <div>
-              <!-- Cancel -->
-              <a class="tna-button tna-button--secondary" role="button" href="dashboard.html">
-                <span>Cancel</span>
-              </a>
-
               <!-- Continue -->
               <a class="button" role="button" href="consignment-details.html">
-                <span>Save and continue</span>
+                <span>Continue</span>
               </a>
+              <!-- Save for later -->
+              <!-- <a class="tna-button tna-button--secondary" role="button" href="dashboard.html">
+                <span>Save and resume later</span>
+              </a> -->
             </div>
 
           </form>

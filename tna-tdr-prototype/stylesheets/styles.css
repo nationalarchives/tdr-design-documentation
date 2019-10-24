@@ -271,7 +271,7 @@ footer a {
     color: #fff;
 }
 footer a:hover {
-    color: #eee;
+    color: #fff;
 }
 .footer-logo {
     text-align: right;
@@ -283,5 +283,6 @@ footer a:hover {
 .step-hint {
     color: #6f777b;
     margin-bottom: -25px;
+    margin-top: 25px;
     font-size: 20px;
   }

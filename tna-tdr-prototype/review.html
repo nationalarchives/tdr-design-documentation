@@ -34,7 +34,14 @@
         <div class="col-md-8">
 
           <!-- Back button -->
-          <p><a href="upload.html">Back</a></p>
+          <a class="tna-button tna-button--secondary" role="button" href="upload.html">
+              <span>Back</span>
+          </a>
+          <!-- Cancel button -->
+          <a class="tna-button tna-button--secondary" role="button" href="dashboard.html">
+              <span>Cancel</span>
+          </a>
+
           <!-- Progress indicator -->
           <p class="step-hint">Step 5 of 5</p>
           <!-- Headline -->
@@ -47,7 +54,7 @@
               <tbody>
                 <tr>
                 <th class="govuk-summary-list__key">
-                  Series number
+                  Series reference
                 </th>
                 <td class="govuk-summary-list__value">
                   12345678
@@ -55,7 +62,7 @@
               </tr>
               <tr>
                 <th class="govuk-summary-list__key">
-                  Consignment name
+                  Consignment reference
                 </th>
                 <td class="govuk-summary-list__value">
                   ABC1234
@@ -63,18 +70,10 @@
               </tr>
               <tr>
                 <th class="govuk-summary-list__key">
-                  Transferring body
+                  Files uploaded for transfer
                 </th>
                 <td class="govuk-summary-list__value">
-                  Transferring Department
-                </td>
-              </tr>
-              <tr>
-                <th class="govuk-summary-list__key">
-                  Files uploaded
-                </th>
-                <td class="govuk-summary-list__value">
-                  2
+                  200
                 </td>
               </tr>
             </tbody>
@@ -91,29 +90,9 @@
 
                   <div class="govuk-checkboxes">
                     <div class="govuk-checkboxes__item govuk-checkboxes--small">
-                      <input required="" class="govuk-checkboxes__input" id="confirmRecordTransfer" name="confirmRecordTransfer" type="checkbox" value="yes">
-                      <label class="govuk-label govuk-checkboxes__label" for="confirmRecordTransfer">
-                        2 records are selected to be transferred.
-                      </label>
-                    </div>
-
-                  </div>
-
-                  <div class="govuk-checkboxes">
-                    <div class="govuk-checkboxes__item govuk-checkboxes--small">
-                      <input required="" class="govuk-checkboxes__input" id="confirmOpen" name="confirmOpen" type="checkbox" value="yes">
-                      <label class="govuk-label govuk-checkboxes__label" for="confirmOpen">
-                        I confirm that all records are open.
-                      </label>
-                    </div>
-
-                  </div>
-
-                  <div class="govuk-checkboxes">
-                    <div class="govuk-checkboxes__item govuk-checkboxes--small">
                       <input required="" class="govuk-checkboxes__input" id="confirmTnaOwnership" name="confirmTnaOwnership" type="checkbox" value="yes">
                       <label class="govuk-label govuk-checkboxes__label" for="confirmTnaOwnership">
-                        I confirm that I am transferring ownership to The National Archives.
+                        I confirm that I am transferring legal ownership to The National Archives.
                       </label>
                     </div>
 
@@ -125,14 +104,13 @@
 
             <!-- Buttons -->
             <div class="form-row">
-              <!-- Cancel -->
-              <a class="tna-button tna-button--secondary" role="button" href="dashboard.html">
-                <span>Cancel</span>
-              </a>
-
               <!-- Continue -->
               <a class="button" role="button" href="confirmation.html">
                 <span>Transfer</span>
+              </a>
+              <!-- Save for later -->
+              <a class="tna-button tna-button--secondary" role="button" href="dashboard.html">
+                <span>Save and resume later</span>
               </a>
             </div>
 
