@@ -1,8 +1,11 @@
 # TDR Design Documentation (ALPHA)
-Design decisions and wireframe changes
+This repository contains two HTML prototypes (1: TDR in TNA Design and 2: TDR in a Hybrid Design) as well as wireframes for MVP and POC and a few separate pages. Wireframes are built in Sketch and kept updated with a git plugin (see **workflow.md** for how it works). You can either clone this repository and keep working with git or you can download these files from here or Objective (Digital Archiving - Projects and products - Transfer Digital Records - Documentation - Design) and keep working locally on your computer and decide for yourself how you want to share your files with others.
 
 
+Below, design notes are taken to keep track of what is important for the designs and what decisions have been made. 
 
+
+## Design
 We are working on 3 brand designs:
 - GOV.UK Design System: https://design-system.service.gov.uk/  
 - TNA Design System (one that is just being created for Legislation and all TNA digital services)
@@ -11,14 +14,14 @@ We are working on 3 brand designs:
 The working prototype is in the GOV.UK design but no final decisions have been made.
 (The decision will be as a result of business requirements, senior stakeholders and users responses to the designs.)
 We want to do user research to establish feelings of trust and security in using the new TNA design.
-2019-10-17: We are not going forward with the hybrid design.
+2019-10-17: The hybrid design is not the most favoured option but might still be worth being tested with users.
 
 
+## Persona
+We are focusing (for now) on Persona Robert, the transferring body in other government departments. 
 
-We are focusing (for now) on Persona Robert, the transferring body in other government departments.  
 
-
-
+## User Journey
 The user journey is divided in three stages/steps:  
 1 Login + Upload  
 2 Processing  
@@ -26,8 +29,7 @@ The user journey is divided in three stages/steps:
 
 
 
-
-#### Overall design decisions:
+## Overall design decisions:
 - Registration of user accounts will be done by us (for now)
 - ‘Consignment’ replaces ‘batch’ in TDR as language used
 - The users will need to comply with a list of things before using TDR (Transfer Agreement)
@@ -37,15 +39,21 @@ The user journey is divided in three stages/steps:
 - Collaboration between users will not be possible (for now)
 
 
-#### Challenges:
-- Series ID / number
-- IE 11 does not allow folder upload
+## Challenges/Questions:
+- Progress indicator bar (with clickable sections) on the top instead of GOV.UK Step indicator? Is that still accessible?
+- Guidance specific to the task on each page?
+- Series reference needs to be given by the user but it is created by TNA (loop?)
+- Do we really need a consignment reference? Can we do without?
+- Upload with G Suite
+- IE 11 does not allow folder upload => SOLUTION: add instructions for zip file
+- Edge performance is slow
+- Upload and Processing progress? How do we separate those two since the processing starts with the first uploaded file? How do we show the user? How do we avoid frustration of waiting?
 
 
 
 ## MVP
 
-#### MVP design decisions:
+### MVP design decisions:
 Upload: 
 - The user needs to be able to resume a transfer
 - 'Service Agreements' is now called 'Transfer Agreement' (agreed with Nicki)
@@ -66,11 +74,9 @@ Transfer:
 - The user will need to confirm warnings before transferring
 
 
-
-
 ## P.O.C.
 
-#### P.O.C. design decisions:
+### P.O.C. design decisions:
 
 Upload:
 Same as MVP, except
@@ -89,16 +95,16 @@ Transfer:
 
 ## User testing results for the design
 
-#### 23/09/2019 
-- Optional fields were not noticed as such -> need to be more obvious
-- Historic was not clear to users -> needs clarification or to be taken out
-- Consignment was not familiar to users -> needs clarification and maybe moved to the beginning
-- Upload with G Suite and other systems are expected -> will be integrated later
-- Browse is commonly used -> Drag and drop can be removed as it only makes this process more complicated
-- Processing error message was not clear to users -> needs to be helpful for users to be handled on their own
-- Processing success message seems a little bit like the end -> maybe go straight to Review page
-- Review is useful -> keep
-- ‘Do not delete your copies’ warning is well placed -> keep
-- User expects to be notified by email about when transfer was safe and copies can be deleted -> will be integrated later
+### 23/09/2019 
+- Optional fields were not noticed as such => need to be more obvious
+- Historic was not clear to users => needs clarification or to be taken out
+- Consignment was not familiar to users => needs clarification and maybe moved to the beginning
+- Upload with G Suite and other systems are expected => will be integrated later
+- Browse is commonly used => Drag and drop can be removed as it only makes this process more complicated
+- Processing error message was not clear to users => needs to be helpful for users to be handled on their own
+- Processing success message seems a little bit like the end => maybe go straight to Review page
+- Review is useful => keep
+- ‘Do not delete your copies’ warning is well placed => keep
+- User expects to be notified by email about when transfer was safe and copies can be deleted => will be integrated later
 
 
