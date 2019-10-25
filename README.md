@@ -1,5 +1,5 @@
 # TDR Design Documentation (ALPHA)
-This repository contains two HTML prototypes (1: TDR in TNA Design and 2: TDR in a Hybrid Design) as well as wireframes for MVP and POC and a few separate pages. Wireframes are built in Sketch and kept updated with a git plugin (see workflow.md for how it works). You can either clone this repository and keep working with git or you can download these files from here or Objective and keep working locally on your computer (and decide for yourself how you want to share your files with others).
+This repository contains two HTML prototypes (1: TDR in TNA Design and 2: TDR in a Hybrid Design) as well as wireframes for MVP and POC and a few separate pages. Wireframes are built in Sketch and kept updated with a git plugin (see **workflow.md** for how it works). You can either clone this repository and keep working with git or you can download these files from here or Objective (Digital Archiving - Projects and products - Transfer Digital Records - Documentation - Design) and keep working locally on your computer and decide for yourself how you want to share your files with others.
 
 
 Below, design notes are taken to keep track of what is important for the designs and what decisions have been made. 
