@@ -1,5 +1,7 @@
 # TDR Design Documentation (ALPHA)
-Design decisions and wireframe changes
+This repository contains the two HTML prototypes of TDR in TNA Design and in a Hybrid Design as well as Wireframes for MVP and POC and a few separate pages. Wireframes are built in Sketch and kept updated with a git plugin (see workflow.md for how it works). 
+
+Below, design notes are taken to keep track of what is important for the designs and what decisions have been made. 
 
 
 ## Design
