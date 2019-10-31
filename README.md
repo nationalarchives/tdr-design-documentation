@@ -8,11 +8,11 @@ Below, design notes are taken to keep track of what is important for the designs
 ## Design
 We are working on 3 brand designs:
 - GOV.UK Design System: https://design-system.service.gov.uk/  
-- TNA Design System (one that is just being created for Legislation and all TNA digital services)
+- TNA Design System (one that is just being created for Legislation and all TNA digital services): http://nationalarchives.gov.uk/design-guide/ 
 - Hybrid
 
 The working prototype is in the GOV.UK design but no final decisions have been made.
-(The decision will be as a result of business requirements, senior stakeholders and users responses to the designs.)
+(The decision will be a result of business requirements, senior stakeholders and users responses to the designs.)
 We want to do user research to establish feelings of trust and security in using the new TNA design.
 2019-10-17: The hybrid design is not the most favoured option but might still be worth being tested with users.
 
@@ -22,10 +22,10 @@ We are focusing (for now) on Persona Robert, the transferring body in other gove
 
 
 ## User Journey
-The user journey is divided in three stages/steps:  
-1 Login + Upload  
-2 Processing  
-3 Transfer  
+The user journey is divided in three stages:  
+1. Upload (which includes the login)
+2. Processing  
+3. Transfer  
 
 
 
@@ -36,7 +36,8 @@ The user journey is divided in three stages/steps:
 - The users will not have to fill out the digital transfer form for TDR (relevant questions will be covered by TDR)
 - The users will not have to use DROID for TDR
 - IE users will have to zip their files so they can upload a zip folder
-- Collaboration between users will not be possible (for now)
+- Collaboration between users will only be possible later (not in MVP)
+- Users will be informed by email when a transfer has been successful and they can delete their copies
 
 
 ## Challenges/Questions:
@@ -107,4 +108,21 @@ Transfer:
 - ‘Do not delete your copies’ warning is well placed => keep
 - User expects to be notified by email about when transfer was safe and copies can be deleted => will be integrated later
 
+
+## To Dos (as of 31/10/2019)
+
+Improve current prototype
+- Check all error messages / error handling
+- Series description displayed to help users to choose right series reference?
+- Take Consignment information page out
+- Add a progress bar and message (do not close browser) in upload page
+- Improve processing page and add message about what is happening
+- Add message on processing success page that explains that it was saved as consignment XYZ (as soon as we actually save it as such)
+- Display content that user has entered on previous pages (in case the user requested a new series reference which extends the review by series description and creating body) and change consignment reference to the automatically generated one
+- Decide on message on last page about giving the user confirmation
+
+Add to current prototype
+- IE / Edge detection and different handling in the upload page
+- Create guidance or help page
+- Add additional metadata entry
 
