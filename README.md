@@ -2,13 +2,13 @@
 This repository contains two HTML prototypes (1: TDR in TNA Design and 2: TDR in a Hybrid Design) as well as wireframes for MVP and POC and a few separate pages. Wireframes are built in Sketch and kept updated with a git plugin (see **workflow.md** for how it works). You can either clone this repository and keep working with git or you can download these files from here or Objective (Digital Archiving - Projects and products - Transfer Digital Records - Documentation - Design) and keep working locally on your computer and decide for yourself how you want to share your files with others.
 
 
-Below, design notes are taken to keep track of what is important for the designs and what decisions have been made. 
+Below, design notes are taken to keep track of what is important for the designs and what decisions have been made.
 
 
 ## Design
 We are working on 3 brand designs:
 - GOV.UK Design System: https://design-system.service.gov.uk/  
-- TNA Design System (one that is just being created for Legislation and all TNA digital services): http://nationalarchives.gov.uk/design-guide/ 
+- TNA Design System (one that is just being created for Legislation and all TNA digital services): http://nationalarchives.gov.uk/design-guide/
 - Hybrid
 
 The working prototype is in the GOV.UK design but no final decisions have been made.
@@ -18,7 +18,7 @@ We want to do user research to establish feelings of trust and security in using
 
 
 ## Persona
-We are focusing (for now) on Persona Robert, the transferring body in other government departments. 
+We are focusing (for now) on Persona Robert, the transferring body in other government departments.
 
 
 ## User Journey
@@ -55,7 +55,7 @@ The user journey is divided in three stages:
 ## MVP
 
 ### MVP design decisions:
-Upload: 
+Upload:
 - The user needs to be able to resume a transfer
 - 'Service Agreements' is now called 'Transfer Agreement' (agreed with Nicki)
 For the questions, we will use more direct,  plain language e.g. The records are all in English. (agreed with Sonia)
@@ -64,7 +64,7 @@ For the questions, we will use more direct,  plain language e.g. The records are
 Processing:
 - Processing starts with the upload of the first file
 - Upload and Processing (meaning the three checks) run parallel
-- To show progress in a progressbar (with percentage) is possible 
+- To show progress in a progressbar (with percentage) is possible
 - To display the time remaining to the user is not feasible (because it depends on e.g. how many other users are uploading files at the same time)
 - If there is a fail, we let the user know what the fail is related to and suggest an action (the user can only do something about anti-virus or file format errors)
 In case of a checksum validation error, we let the user try the upload again and if it fails again, then let the user know that there is a problem with the service.
@@ -96,7 +96,7 @@ Transfer:
 
 ## User testing results for the design
 
-### 23/09/2019 
+### 23/09/2019
 - Optional fields were not noticed as such => need to be more obvious
 - Historic was not clear to users => needs clarification or to be taken out
 - Consignment was not familiar to users => needs clarification and maybe moved to the beginning
@@ -126,3 +126,14 @@ Add to current prototype
 - Create guidance or help page
 - Add additional metadata entry
 
+## Licence
+
+Unless stated otherwise, the codebase is released under the [MIT
+License](LICENCE). This covers both the codebase and any sample code in the
+documentation.
+
+The documentation is [© Crown copyright][crown-copyright] and available under
+the terms of the [Open Government 3.0 licence][ogl].
+
+[crown-copyright]: https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/
+[ogl]: http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
