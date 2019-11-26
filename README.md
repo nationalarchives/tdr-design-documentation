@@ -18,8 +18,15 @@ We want to do user research to establish feelings of trust and security in using
 
 
 ## Persona
-We are focusing (for now) on Persona Robert, the transferring body in other government departments.
 
+Primary personas (those that directly interact with TDR):
+- Robert (Records Transfer Assistant)
+- Lisa (Digital Archivist)
+
+Secondary personas (do not directly interact with TDR but what happens in TDR will impact their work): 
+- Franka (Transfer Adviser)
+- Zoe (TDR Admin)
+- Margret (Departmental Records Officer)
 
 ## User Journey
 The user journey is divided in three stages:  
