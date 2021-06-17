@@ -1,11 +1,14 @@
 # TDR Design Documentation (ALPHA)
-This repository contains two HTML prototypes (1: TDR in TNA Design and 2: TDR in a Hybrid Design) as well as wireframes for MVP and POC and a few separate pages. Wireframes are built in Sketch and kept updated with a git plugin (see **workflow.md** for how it works). You can either clone this repository and keep working with git or you can download these files from here or Objective (Digital Archiving - Projects and products - Transfer Digital Records - Documentation - Design) and keep working locally on your computer and decide for yourself how you want to share your files with others.
+2021: We use the GOVUK Prototype Kit for developing ideas, testing them out and also for user testing: https://tna-tdr-interactive-prototype.herokuapp.com/
+2019/2020: We created two HTML prototypes (1: TDR in TNA Design and 2: TDR in a Hybrid Design) as well as wireframes for MVP and POC and a few separate pages that you can find in this repository. Wireframes are built in Sketch and kept updated with a git plugin (see **workflow.md** for how it works). You can either clone this repository and keep working with git or you can download these files from here or Objective (Digital Archiving - Projects and products - Transfer Digital Records - Documentation - Design) and keep working locally on your computer and decide for yourself how you want to share your files with others.
 
 
 Below, design notes are taken to keep track of what is important for the designs and what decisions have been made.
 
 
 ## Design
+2021: We decided to use the GOVUK Design System. However, we are not using the GDS Transport font. We are using Arial font instead. We mostly use components from the design system and if we modify them or create our own, we document it [link to follow].
+2019/2020:
 We are working on 3 brand designs:
 - GOV.UK Design System: https://design-system.service.gov.uk/  
 - TNA Design System (one that is just being created for Legislation and all TNA digital services): http://nationalarchives.gov.uk/design-guide/
@@ -18,7 +21,8 @@ We want to do user research to establish feelings of trust and security in using
 
 
 ## Persona
-
+2021: Sarra and Pauline created and worked on the newest personas.
+2019/2020:
 Primary personas (those that directly interact with TDR):
 - Robert (Records Transfer Assistant)
 - Lisa (Digital Archivist)
