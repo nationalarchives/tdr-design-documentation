@@ -1,0 +1,160 @@
+{% extends "layout-without-sign-out.html" %}
+
+{% block pageTitle %}
+  MFA
+{% endblock %}
+
+{% block content %}
+<!--MFA Key-->
+<!--<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-l">
+      Sign in to your account
+    </h1>
+
+    <div class="govuk-warning-text">
+      <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+      <strong class="govuk-warning-text__text">
+        <span class="govuk-warning-text__assistive">Warning</span>
+        You need to set up Mobile Authenticator to activate your account.
+      </strong>
+    </div>
+
+    <ol class="govuk-list govuk-list&#45;&#45;number">
+      <li>Install one of the following applications on your mobile:
+        <ul class="govuk-list govuk-list&#45;&#45;bullet">
+          <li>FreeOTP</li>
+          <li>Google Authenticator</li>
+        </ul>
+      </li>
+      <li><p>Open the application and enter the key:</p>
+        <p>GYZD DJWK POSM AMWL QPLG MEUD CIFJ AIZN<br>
+          <a href="#" class="govuk-link govuk-body-s">I want to scan a QR code instead</a>
+        </p>
+      </li>
+      <li><p>Use the following configuration values if the application allows setting them:</p>
+        <ul class="govuk-list govuk-list&#45;&#45;bullet">
+          <li>Type: Time-based</li>
+          <li>Algorithm: SHA1</li>
+          <li>Digits: 6</li>
+          <li>Interval: 30</li>
+        </ul>
+      </li>
+      <li><p>Enter the one time code provided by the application and click Submit to finish the setup.</p>
+      <p>Provide a Device Name to help you manage your OTP (One-time password) devices.</p>
+        <form action="/form-handler" method="post" novalidate>
+
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="code">
+              One-time code
+            </label>
+            <input class="govuk-input govuk-!-width-one-half" id="code" name="event-name" type="text">
+          </div>
+
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="device-name">
+              Device name
+            </label>
+            <input class="govuk-input govuk-!-width-one-half" id="device-name" name="event-name" type="text">
+          </div>
+
+          <button class="govuk-button" data-module="govuk-button">
+            Submit
+          </button>
+        </form>
+      </li>
+    </ol>
+
+
+  </div>
+</div>-->
+
+
+
+
+<!--MFA QR-Code-->
+<!--<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-l">
+      Sign in to your account
+    </h1>
+
+    <div class="govuk-warning-text">
+      <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+      <strong class="govuk-warning-text__text">
+        <span class="govuk-warning-text__assistive">Warning</span>
+        You need to set up Mobile Authenticator to activate your account.
+      </strong>
+    </div>
+
+    <ol class="govuk-list govuk-list&#45;&#45;number">
+      <li>Install one of the following applications on your mobile:
+        <ul class="govuk-list govuk-list&#45;&#45;bullet">
+          <li>FreeOTP</li>
+          <li>Google Authenticator</li>
+        </ul>
+      </li>
+      <li><p>Open the application and scan the QR code:</p>
+        <img src="/public/images/barcode.png" alt="QR code">
+        <p><a href="#" class="govuk-link govuk-body-s">I want to enter a key instead</a></p>
+      </li>
+      <li><p>Enter the one time code provided by the application and click Submit to finish the setup.</p>
+      <p>Provide a device name to help you manage your OTP (One-time password) devices.</p>
+        <form action="/form-handler" method="post" novalidate>
+
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="code">
+              One-time code
+            </label>
+            <input class="govuk-input govuk-!-width-one-half" id="code" name="event-name" type="text">
+          </div>
+
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="device-name">
+              Device name
+            </label>
+            <input class="govuk-input govuk-!-width-one-half" id="device-name" name="event-name" type="text">
+          </div>
+
+          <button class="govuk-button" data-module="govuk-button">
+            Submit
+          </button>
+        </form>
+      </li>
+    </ol>
+
+
+  </div>
+</div>-->
+
+
+
+<!--One-time code-->
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-l">
+      Sign in to your account
+    </h1>
+
+    <form action="/dashboard" method="post" novalidate>
+
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="code">
+          One-time code
+        </label>
+        <input class="govuk-input govuk-!-width-one-half" id="code" name="event-name" type="text">
+      </div>
+
+      <button class="govuk-button" data-module="govuk-button">
+        Continue
+      </button>
+    </form>
+
+  </div>
+</div>
+
+{% endblock %}
