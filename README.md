@@ -23,20 +23,20 @@ We want to do user research to establish feelings of trust and security in using
 
 ## Design Components
 We are using the following components from the GOVUK Design System:
--Button
--Checkboxes
--Error message
--Error summary
--Footer
--Header
--Inset text
--Notification banner
--Panel
--Phase banner
--Select
--Summary list
--Text input
--Warning text
+- Button
+- Checkboxes
+- Error message
+- Error summary
+- Footer
+- Header
+- Inset text
+- Notification banner
+- Panel
+- Phase banner
+- Select
+- Summary list
+- Text input
+- Warning text
 
 We also use a modified error summary to display a success summary. Here is why: The success summary tells the user that the upload and checks were successful. This message does not even need any extra components, we could simply use a paragraph. However, for the majority of users adding a slight extra colour makes it even faster to process that it was a success. And the simplest version of this is to add a green frame. This is also consistent with the error summary which has a red frame. We are aware that there is the notification banner component (which should be the right component to use) but we decided that it is an overload and not suitable for us at this point. On the contrary, it makes it rather difficult to process as it uses a lot of different font styles.
 
