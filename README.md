@@ -8,7 +8,7 @@ Below, design notes are taken to keep track of what is important for the designs
 
 
 ## Design
-2021: We decided to use the GOVUK Design System. However, we are not using the GDS Transport font. We are using Arial font instead. We mostly use components from the design system and if we modify them or create our own, we document it [link to follow].
+2021: We decided to use the GOVUK Design System. However, we are not using the GDS Transport font. We are using Arial font instead. We mostly use components from the design system and if we modify them or create our own, we document it in the section 'Design Components'.
 
 2019/2020:
 We are working on 3 brand designs:
@@ -21,6 +21,24 @@ The working prototype is in the GOV.UK design but no final decisions have been m
 We want to do user research to establish feelings of trust and security in using the new TNA design.
 2019-10-17: The hybrid design is not the most favoured option but might still be worth being tested with users.
 
+## Design Components
+We are using the following components from the GOVUK Design System:
+-Button
+-Checkboxes
+-Error message
+-Error summary
+-Footer
+-Header
+-Inset text
+-Notification banner
+-Panel
+-Phase banner
+-Select
+-Summary list
+-Text input
+-Warning text
+
+We also use a modified error summary to display a success summary. Here is why: The success summary tells the user that the upload and checks were successful. This message does not even need any extra components, we could simply use a paragraph. However, for the majority of users adding a slight extra colour makes it even faster to process that it was a success. And the simplest version of this is to add a green frame. This is also consistent with the error summary which has a red frame. We are aware that there is the notification banner component (which should be the right component to use) but we decided that it is an overload and not suitable for us at this point. On the contrary, it makes it rather difficult to process as it uses a lot of different font styles.
 
 ## Persona
 2021: Sarra and Pauline created and worked on the newest personas.
