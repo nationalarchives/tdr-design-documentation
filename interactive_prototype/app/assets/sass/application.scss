@@ -210,7 +210,7 @@ $govuk-assets-path: '/govuk/assets/';
 //   display: none;
 // }
 .showBanner {
-  animation: showBlock 0s 5s forwards;
+  animation: showBlock 0s 60s forwards;
   visibility: hidden;
   height:0;
 }
