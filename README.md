@@ -39,6 +39,10 @@ We are using the following components from the GOVUK Design System:
 - Warning text
 
 #### Modified components
+- Beta banner
+
+We use the beta banner and changed the wording slightly. It says "This is a new service – your feedback will help us to improve it. Please get in touch (opens in new tab)." instead of "This is a new service – your feedback will help us to improve it.". The link is on "get in touch (opens in new tab)" rather than on "feedback". It also tells the user it opens in a new tab. Guidance around opening a new tab was found here https://design-system.service.gov.uk/styles/typography/#links. The link leads to our Contact page which is called 'Get in touch'.
+
 - Success summary 
 
 We use a modified error summary to display a success summary. Here is why: The success summary tells the user that the upload and checks were successful. This message does not even need any extra components, we could simply use a paragraph. However, for the majority of users adding a slight extra colour makes it even faster to process that it was a success. And the simplest version of this is to add a green frame. This is also consistent with the error summary which has a red frame. We are aware that there is the notification banner component (which might be the right component to use) but we decided that it is an overload and not suitable for us at this point. On the contrary, it makes it rather difficult to process as it uses a lot of different font styles.
