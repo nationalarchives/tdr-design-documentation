@@ -11,6 +11,19 @@
 
       <span class="govuk-caption-l">Step 3 of 5</span>
       <h1 class="govuk-heading-l">Upload your records</h1>
+      <div class="govuk-error-summary" aria-labelledby="error-summary-title" role="alert" tabindex="-1" data-module="govuk-error-summary">
+        <h2 class="govuk-error-summary__title" id="error-summary-title">
+          Your session has timed out
+        </h2>
+        <div class="govuk-error-summary__body">
+          <p>Your session has ended because you were inactive for longer than 30 minutes. Please sign in again to continue from where you left off.</p>
+          <ul class="govuk-list govuk-error-summary__list">
+            <li>
+              <a href="#postcode-input">Sign in again</a>
+            </li>
+          </ul>
+        </div>
+      </div>
 
         <p>You can only upload one folder to be transferred. If your folder contains files that we cannot accept, you may have to start again.</p>
 
@@ -56,9 +69,9 @@
                   <p class="govuk-body">For more information on what metadata will be captured during the upload please visit our <a target="_blank" rel="noopener noreferrer" href="/faq" class="govuk-link">FAQ (opens in new tab)</a>.</p>
 
                   <div class="govuk-button-group">
-                    <a href="/upload-folder-success-error" role="button" draggable="false" class="govuk-button"  data-module="govuk-button">
+                    <button class="govuk-button" type="submit" data-module="govuk-button" role="button">
                       Start upload
-                    </a>
+                    </button>
                     <a class="govuk-link govuk-link--no-visited-state" href="/dashboard">Cancel</a>
                   </div>
 
