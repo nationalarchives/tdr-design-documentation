@@ -10,15 +10,10 @@
     <div class="govuk-grid-column-two-thirds">
 
       <span class="govuk-caption-l">Step 3 of 5</span>
-      <h1 class="govuk-heading-l">Upload your records</h1>
+      <h1 class="govuk-heading-l">Upload court judgment</h1>
 
-        <p>You can only upload one folder to be transferred. If your folder contains files that we cannot accept, you may have to start again.</p>
-
-        <p class="govuk-body">There is no limit to the file size but larger files may take longer to be uploaded and checked.</p>
-
-        <div class="govuk-inset-text">
-          Please check your records do not contain thumbnail images (thumb.db), executable files (.exe) or system files which you do not intend to transfer. We cannot accept password protected files or zip files.
-        </div>
+      <p class="govuk-body">You can upload your court judgment file by dragging and dropping it in the area below
+        or by clicking ‘Choose file’.</p>
 
         <form class="form" action="/progress-uploading" method="post" id="file-upload-form" data-consignment-id="@consignmentId">
           <div class="govuk-form-group">
@@ -53,7 +48,6 @@
                       Choose folder
                     </label>
                   </div>
-                  <p class="govuk-body">For more information on what metadata will be captured during the upload please visit our <a target="_blank" rel="noopener noreferrer" href="/faq" class="govuk-link">FAQ (opens in new tab)</a>.</p>
 
                   <div class="govuk-button-group">
                     <button class="govuk-button" type="submit" data-module="govuk-button" role="button">
