@@ -17,7 +17,9 @@
         <p class="govuk-body">There is no limit to the file size but larger files may take longer to be uploaded and checked.</p>
 
         <div class="govuk-inset-text">
-          Please check your records do not contain thumbnail images (thumb.db), executable files (.exe) or system files which you do not intend to transfer. We cannot accept password protected files or zip files.
+          We cannot accept files or folders which are password protected, zipped or contain slashes (/ and \) in the
+          name. Empty folders will not be included. Also try and remove any thumbnail images (thumbs.db) and executable files (.exe) from the
+          records before uploading.
         </div>
 
         <form class="form" action="/progress-uploading" method="post" id="file-upload-form" data-consignment-id="@consignmentId">

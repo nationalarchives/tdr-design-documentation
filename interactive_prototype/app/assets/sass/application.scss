@@ -27,13 +27,13 @@ $govuk-assets-path: '/govuk/assets/';
 .govuk-header__tna-logo-image {
   width:220px
 }
-.govuk-header__tna-content {
+/*.govuk-header__tna-content {
   margin:0 auto;
   position:relative
-}
-.tna-header {
+}*/
+/*.tna-header {
   display:flex
-}
+}*/
 .govuk-header__tna_link {
   text-decoration:none
 }
@@ -213,4 +213,10 @@ $govuk-assets-path: '/govuk/assets/';
     visibility: visible; 
     height: 100%;
   }
+}
+
+@mixin img-responsive($display: block) {
+  display: $display;
+  max-width: 100%; // Part 1: Set a maximum relative to the parent
+  height: auto; // Part 2: Scale the height according to the width, otherwise you get stretching
 }
