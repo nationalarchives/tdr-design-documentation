@@ -11,7 +11,7 @@ Checklists for each component
 * using a button group when two or more buttons are placed together}
 
 Example two buttons:
-<div class="govuk-button-group">
+<code><div class="govuk-button-group">
   <button class="govuk-button" data-module="govuk-button">
     Save and continue
   </button>
@@ -19,16 +19,16 @@ Example two buttons:
   <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
     Save as draft
   </button>
-</div>
+</div><code>
 
 Example 1 button 1 link:
-<div class="govuk-button-group">
+<code><div class="govuk-button-group">
   <button class="govuk-button" data-module="govuk-button">
     Continue
   </button>
 
   <a class="govuk-link" href="#">Cancel</a>
-</div>
+</div><code>
 
 ### Checkboxes
 * are aligned left
