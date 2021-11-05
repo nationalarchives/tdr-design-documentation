@@ -4,13 +4,16 @@ Checklists for each component
 
 ### Paragraphs
 * uses class govuk-body
+```
+<p class="govuk-body">govuk-body</p>
+```
 
 ### Buttons
 * have attribute 'data-prevent-double-click' if you are working in production and research shows that users are frequently sending information twice
 * have data-module=govuk-button
 * using a button group when two or more buttons are placed together}
 
-Example two buttons:
+Example 2 buttons:
 ```
 <div class="govuk-button-group">
   <button class="govuk-button" data-module="govuk-button">
