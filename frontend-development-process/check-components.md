@@ -1,14 +1,34 @@
-# Check components on consistency and completeness\
+# Check components on consistency and completeness
 
-Checklists for each component\
+Checklists for each component
 
 ### Paragraphs
-* uses class govuk-body\
+* uses class govuk-body
 
 ### Buttons
 * have attribute 'data-prevent-double-click' if you are working in production and research shows that users are frequently sending information twice
 * have data-module=govuk-button
 * using a button group when two or more buttons are placed together}
+
+Example two buttons:
+<div class="govuk-button-group">
+  <button class="govuk-button" data-module="govuk-button">
+    Save and continue
+  </button>
+
+  <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+    Save as draft
+  </button>
+</div>
+
+Example 1 button 1 link:
+<div class="govuk-button-group">
+  <button class="govuk-button" data-module="govuk-button">
+    Continue
+  </button>
+
+  <a class="govuk-link" href="#">Cancel</a>
+</div>
 
 ### Checkboxes
 * are aligned left
