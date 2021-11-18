@@ -16,46 +16,18 @@
 
       <form class="form" action="/upload-confirmation" method="post">
         
-        <p class="govuk-body">Please wait while your file is being checked. This may take a few minutes. </p>
-        <p class="govuk-body">The following checks are now being performed:</p>
-          <ul class="govuk-list govuk-list--bullet">
-            <li>Anti-virus scanning</li>
-            <li>Identifying file formats</li>
-            <li>Validating data integrity</li>
-          </ul>
-
-        <p class="govuk-body govuk-!-margin-bottom-7">For more information on these checks, please see our
-          <a class="govuk-link" target="_blank" rel="noopener noreferrer" href="/faq">FAQ (opens in new tab)</a> for this service.
-        </p>
-
-        <div class="showBanner">
-          <div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
-            <div class="govuk-notification-banner__header">
-              <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
-                Important
-              </h2>
-            </div>
-            <div class="govuk-notification-banner__content">
-              <h3 class="govuk-notification-banner__heading">
-                Your file has been checked.
-              </h3>
-              <p class="govuk-body">Click 'Continue' to see your results.</p>
-            </div>
-          </div>
-        </div>
-
-        <button class="govuk-button" id="next-step-btn" data-module="govuk-button" disabled>Continue</button>
-
+        <p class="govuk-body">Please wait whilst your court judgment is being checked. This may take a few minutes. Once your record is checked you will be redirected automatically.</p>
+        
       </form>
 
     </div>
   </div>
 
-
-  <script type="text/javascript">
-    setTimeout(() => {
-      document.getElementById("next-step-btn").disabled = false;
-    }, 10000);
-  </script>
+<script>
+  function pageRedirect() {
+      window.location.replace("/upload-confirmation");
+  }      
+  setTimeout("pageRedirect()", 10000);
+</script>
 
 {% endblock %}
