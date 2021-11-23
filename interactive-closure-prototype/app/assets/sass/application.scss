@@ -207,7 +207,7 @@ $govuk-assets-path: '/govuk/assets/';
 }
 
 .showBanner {
-  animation: showBlock 0s 60s forwards;
+  animation: showBlock 0s 10s forwards;
   visibility: hidden;
   height:0;
 }
