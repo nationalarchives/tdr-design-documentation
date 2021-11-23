@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Check your answers
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds-from-desktop">
+
+      <h1 class="govuk-heading-l">Edit descriptive data</h1>
+      <p class="govuk-body">You can now edit the metadata for all files in the folder.</p>
+
+      <div class="govuk-form-group">
+        <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--m" for="more-detail">
+            Description
+          </label>
+        </h1>
+        <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint" placeholder="Recipes"></textarea>
+      </div>
+
+        <br>
+
+        <a href="updated-description-folder-level.html" role="button" draggable="false" class="govuk-button"  data-module="govuk-button">
+          Save
+        </a>
+        <a href="folder-level.html" role="button" draggable="false" class="govuk-button govuk-button--secondary"  data-module="govuk-button">
+          Back to folder
+        </a>
+      </div>
+
+
+    </div>
+  </div>
+{% endblock %}

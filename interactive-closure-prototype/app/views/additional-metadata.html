@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Check your answers
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds-from-desktop">
+
+      <span class="govuk-caption-l">Step 5 of 6</span>
+      <h1 class="govuk-heading-l">Add, edit or delete descriptive data</h1>
+      <h1 class="govuk-heading-s">Folder uploaded: Recipes and ingredients</h1>
+
+      <p class="govuk-body">You can now add or edit descriptive data to your records. Or you can proceed without by clicking ‘Continue’ on the bottom of this page.</p>
+
+      <p class="govuk-body">For all files, you can add, edit or delete descriptive data (such as summary or closure). You can choose the properties that are required.</p>
+
+      <p class="govuk-body"><a class="govuk-link" href="folder-level.html">Add, edit or delete metadata for all files in the folder</a></p>
+      
+      <p class="govuk-body">For individual files or subfolders, you can add, edit or delete descriptive data (such as summary or closure). You can choose the properties that are required. You can also delete individual files from this consignment.</p>
+
+      <p class="govuk-body"><a class="govuk-link" href="file-level.html">Add, edit or delete metadata for individual files or folders</a></p>
+
+      <a href="summary.html" role="button" draggable="false" class="govuk-button"  data-module="govuk-button">
+        Continue
+      </a>
+
+    </div>
+  </div>
+{% endblock %}
