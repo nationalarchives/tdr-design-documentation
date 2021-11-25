@@ -12,70 +12,24 @@
       <span class="govuk-caption-l">Step 2 of 5</span>
       <h1 class="govuk-heading-l">Transfer agreement</h1>
 
-      <p class="govuk-body" style="margin-bottom: 0px">Please confirm that the judgment document contains the following information within the text.
-        We cannot publish the judgment without this information.</p>
+      <p class="govuk-body" style="margin-bottom: 0px">Please confirm that the court judgment contains the following information. </p>
 
       <form class="form" action="/upload" method="post">
 
-        <div class="govuk-form-group">
-          <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
-            <div class="govuk-checkboxes govuk-checkboxes--small">
-              <div class="govuk-checkboxes__item">
-                <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
-                <label class="govuk-label govuk-checkboxes__label" for="waste">
-                  Names of Judge/s
-                </label>
-              </div>
-              <div class="govuk-checkboxes__item">
-                <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
-                <label class="govuk-label govuk-checkboxes__label" for="waste-2">
-                  Court
-                </label>
-              </div>
-              <div class="govuk-checkboxes__item">
-                <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
-                <label class="govuk-label govuk-checkboxes__label" for="waste-3">
-                  Judgment date
-                </label>
-              </div>
-              <div class="govuk-checkboxes__item">
-                <input class="govuk-checkboxes__input" id="waste-4" name="waste" type="checkbox" value="lalala">
-                <label class="govuk-label govuk-checkboxes__label" for="waste-4">
-                  Neutral citation
-                </label>
-              </div>
-            </div>
-
-          </fieldset>
+        <div class="govuk-warning-text">
+          <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+          <strong class="govuk-warning-text__text">
+            <span class="govuk-warning-text__assistive">Warning</span>
+            We cannot publish the court judgment without this information: Name(s) of judge(s), name of parties, court, judgment date, neutral citation, case reference(s).
+          </strong>
         </div>
 
-        <div class="govuk-form-group">
-          <fieldset class="govuk-fieldset" aria-describedby="improved-hint">
-            <p class="govuk-body" style="margin-bottom: 0px;">
-              Has the judge approved this document?
-            </p>
-            <div class="govuk-radios govuk-radios--inline govuk-radios--small">
-              <div class="govuk-radios__item">
-                <input class="govuk-radios__input" id="improved" name="improved" type="radio" value="yes">
-                <label class="govuk-label govuk-radios__label" for="improved">
-                  Yes
-                </label>
-              </div>
-              <div class="govuk-radios__item">
-                <input class="govuk-radios__input" id="improved-no" name="improved-no" type="radio" value="no">
-                <label class="govuk-label govuk-radios__label" for="improved-no">
-                  No
-                </label>
-              </div>
-            </div>
-
-          </fieldset>
-        </div>
-
+        <p class="govuk-body" style="margin-bottom: 0px">In addition, if your court judgment has supplementary material then email this to <a href="tdr@nationalarchives.gov.uk">tdr@nationalarchives.gov.uk</a></p>
+        <br>
         <div class="govuk-form-group">
           <fieldset class="govuk-fieldset" aria-describedby="published-hint">
             <p class="govuk-body" style="margin-bottom: 0px;">
-              Has the judge authorised publication of this document?
+              Are there any reporting restrictions for this court judgment?
             </p>
             <div class="govuk-radios govuk-radios--inline govuk-radios--small">
               <div class="govuk-radios__item">
@@ -91,6 +45,12 @@
                 </label>
               </div>
             </div>
+
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="event-name">
+                If yes, please provide more information
+              </label>
+              <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
 
           </fieldset>
         </div>

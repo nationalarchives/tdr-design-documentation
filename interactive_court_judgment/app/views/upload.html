@@ -12,8 +12,11 @@
       <span class="govuk-caption-l">Step 3 of 5</span>
       <h1 class="govuk-heading-l">Upload court judgment</h1>
 
-        <p class="govuk-body">You can upload your court judgment file by dragging and dropping it in the area below
-          or by clicking ‘Choose file’.</p>
+        <p class="govuk-body">You can upload your court judgment by dragging and dropping it in the area below or by clicking ‘Choose file’.</p>
+
+          <div class="govuk-inset-text">
+            We only accept Microsoft Word.
+          </div>
 
         <form class="form" action="/progress-uploading" method="post" id="file-upload-form" data-consignment-id="@consignmentId">
           <div class="govuk-form-group">
@@ -31,7 +34,7 @@
                     accept="image/jpeg" aria-hidden="true"
                     >
                     <p class="govuk-body drag-and-drop__hint-text">Drag and drop a single file here or</p>
-                    <a href="/upload-folder-success" role="button" draggable="false" class="govuk-button govuk-button--secondary" data-module="govuk-button" style="margin-top: 60px">
+                    <a href="/upload-select" role="button" draggable="false" class="govuk-button govuk-button--secondary" data-module="govuk-button" style="margin-top: 60px">
                       Choose file</a>
                   </div>
 
