@@ -12,7 +12,7 @@
       <span class="govuk-caption-l">Step 2 of 5</span>
       <h1 class="govuk-heading-l">Transfer agreement</h1>
 
-      <p class="govuk-body" style="margin-bottom: 0px">Please confirm that the judgment contains the following information within the text. </p>
+      <p class="govuk-body" style="margin-bottom: 0px">Please confirm that the court judgment contains the following information. </p>
 
       <form class="form" action="/upload" method="post">
 
@@ -20,16 +20,16 @@
           <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
           <strong class="govuk-warning-text__text">
             <span class="govuk-warning-text__assistive">Warning</span>
-            We cannot publish the judgment without this information: Name(s) of judge(s), name of parties, court, judgment date, neutral citation, case reference(s).
+            We cannot publish the court judgment without this information: Name(s) of judge(s), name of parties, court, judgment date, neutral citation, case reference(s).
           </strong>
         </div>
 
-        <p class="govuk-body" style="margin-bottom: 0px">In addition, if your transfer has supplementary material then email us on <a href="tdr@nationalarchives.gov.uk">tdr@nationalarchives.gov.uk</a></p>
+        <p class="govuk-body" style="margin-bottom: 0px">In addition, if your court judgment has supplementary material then email this to <a href="tdr@nationalarchives.gov.uk">tdr@nationalarchives.gov.uk</a></p>
         <br>
         <div class="govuk-form-group">
           <fieldset class="govuk-fieldset" aria-describedby="published-hint">
             <p class="govuk-body" style="margin-bottom: 0px;">
-              Are there any reporting restrictions for this judgment?
+              Are there any reporting restrictions for this court judgment?
             </p>
             <div class="govuk-radios govuk-radios--inline govuk-radios--small">
               <div class="govuk-radios__item">
@@ -50,7 +50,7 @@
               <label class="govuk-label" for="event-name">
                 If yes, please provide more information
               </label>
-              <input class="govuk-input" id="event-name" name="event-name" type="text"></div>
+              <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
 
           </fieldset>
         </div>
