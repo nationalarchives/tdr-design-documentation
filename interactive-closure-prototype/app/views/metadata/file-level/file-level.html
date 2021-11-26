@@ -12,7 +12,11 @@
       <p class="govuk-body">You can now modify descriptive data to individual files or folders. You can also delete individual files from this consignment if needed.</p>
       <p class="govuk-body">Click on a particular file or folder to see what metadata is already captured and add, edit or delete properties there. For a bulk edit, first select files and/or folders and then choose an action from the menu.</p>
 
-      <a href="add-closure-bulk.html" role="button" draggable="false" class="govuk-button"  data-module="govuk-button">
+      <button class="govuk-button govuk-button--secondary" data-module="govuk-button" type="button" name="selectAll" value="select-all" onClick="check_all()">
+        Select all
+      </button>
+
+      <a href="#" role="button" draggable="false" class="govuk-button"  data-module="govuk-button">
         Add closure
       </a>
       <a href="#" role="button" draggable="false" class="govuk-button"  data-module="govuk-button">
@@ -29,7 +33,7 @@
           <tr class="govuk-table__row">
             <td class="govuk-table__cell">
               <div class="govuk-checkboxes__item">
-                <input class="govuk-checkboxes__input" id="organisation" name="organisation" type="checkbox" value="hmrc">
+                <input class="govuk-checkboxes__input" id="Subfolder-Lemon-drizzle" name="organisation" type="checkbox" value="hmrc">
                 <label class="govuk-label govuk-checkboxes__label" for="organisation">
                   Subfolder-Lemon-drizzle
                 </label>
@@ -39,7 +43,7 @@
           <tr class="govuk-table__row">
             <td class="govuk-table__cell">
               <div class="govuk-checkboxes__item">
-                <input class="govuk-checkboxes__input" id="organisation" name="organisation" type="checkbox" value="hmrc">
+                <input class="govuk-checkboxes__input" id="Subfolder-Chocolate-banana-bread" name="organisation" type="checkbox" value="hmrc">
                 <label class="govuk-label govuk-checkboxes__label" for="organisation">
                   Subfolder-Chocolate-banana-bread
                 </label>
@@ -49,7 +53,7 @@
           <tr class="govuk-table__row">
             <td class="govuk-table__cell">
               <div class="govuk-checkboxes__item">
-                <input class="govuk-checkboxes__input" id="organisation" name="organisation" type="checkbox" value="hmrc">
+                <input class="govuk-checkboxes__input" id="Banana" name="organisation" type="checkbox" value="hmrc">
                 <label class="govuk-label govuk-checkboxes__label" for="organisation">
                   Banana.doc
                 </label>
@@ -59,7 +63,7 @@
           <tr class="govuk-table__row">
             <td class="govuk-table__cell">
               <div class="govuk-checkboxes__item">
-                <input class="govuk-checkboxes__input" id="organisation" name="organisation" type="checkbox" value="hmrc">
+                <input class="govuk-checkboxes__input" id="Cacao-powder" name="organisation" type="checkbox" value="hmrc">
                 <label class="govuk-label govuk-checkboxes__label" for="organisation">
                   Cacao-powder.png
                 </label>
@@ -69,7 +73,7 @@
           <tr class="govuk-table__row">
             <td class="govuk-table__cell">
               <div class="govuk-checkboxes__item">
-                <input class="govuk-checkboxes__input" id="organisation" name="organisation" type="checkbox" value="hmrc">
+                <input class="govuk-checkboxes__input" id="Chocolate-bun" name="organisation" type="checkbox" value="hmrc">
                 <label class="govuk-label govuk-checkboxes__label" for="organisation">
                   Chocolate-bun.jpeg
                 </label>
@@ -78,10 +82,20 @@
           </tr>
         </tbody>
       </table>
-      <a href="additional-metadata.html" role="button" draggable="false" class="govuk-button govuk-button--secondary"  data-module="govuk-button">
+      <a href="../additional-metadata.html" role="button" draggable="false" class="govuk-button govuk-button--secondary"  data-module="govuk-button">
         Back to overview
       </a>
 
     </div>
   </div>
+
+  <script type="text/javascript">
+function check_all() {
+  var checkboxes = document.getElementsByName('organisation');
+  checkboxes = [...checkboxes];
+  for (var i = 0; i < checkboxes.length; i++) {
+    checkboxes[i].checked = true
+  }
+}
+  </script>
 {% endblock %}
