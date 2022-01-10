@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Welcome
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-l govuk-!-margin-bottom-9">
+        Welcome to the Transfer Digital Records service
+      </h1>
+
+      <h2 class="govuk-heading-m govuk-!-margin-bottom-1">Before you start</h2>
+      <p class="govuk-body">You must upload your court judgment as a Microsoft Word document. Any other formats will not be accepted.</p>
+
+      <h1 class="govuk-heading-m">Upload your court judgment to start a new transfer</h1>
+      <a href="transfer-agreement.html" role="button" draggable="false" class="govuk-button"  data-module="govuk-button">
+        Start transfer
+      </a>
+    </div>
+  </div>
+
+{% endblock %}
