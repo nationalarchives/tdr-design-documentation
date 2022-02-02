@@ -169,8 +169,6 @@ $govuk-assets-path: '/govuk/assets/';
 
 // progress-uploading.html
 .progress-bar-container {
-  border-radius: 10px;
-  box-shadow: 0 2px 3px #0b0c0c inset;
   position: relative;
   appearance: none;
   background-color: #f3f2f1;
@@ -188,7 +186,6 @@ $govuk-assets-path: '/govuk/assets/';
 
 .progress {
   background-color: #505a5f;
-  border-radius: 10px;
   -webkit-animation: progressBar 10s ease-in-out;
   -webkit-animation-fill-mode:both; 
   -moz-animation: progressBar 10s ease-in-out;
