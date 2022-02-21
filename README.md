@@ -23,6 +23,23 @@ We also created different prototypes for failure paths with Axure RP.
 - (30 unidentified): https://8phore.axshare.com/#c=2
 
 
+### How to update the prototypes (using the prototype kit) and deploy them on Heroku
+1. Clone the whole repository
+2. Make changes in IntelliJ (or whatever program you're using) to whatever prototype you want to make changes to
+3. Go to that specific prototype directory in your Terminal
+4. ```git add``` 'the files you would like to add'
+5. ```git commit -m 'the message with your changes'```
+6. ```git push```
+7. enter your password for veryifing your commit
+8. Go back to the toplevel directory ```cd ..```
+9. Set the app where you want to push your changes to so either:
+```heroku git:remote -a interactive_prototype``` or
+```heroku git:remote -a interactive-court-judgment```
+10. Push to the appropriate heroku app
+```git subtree push --prefix interactive_prototype heroku master``` or
+```git subtree push --prefix interactive_court_judgment heroku master```
+
+
 2021: We use the GOVUK Prototype Kit for developing ideas, testing them out and also for user testing: https://tna-tdr-interactive-prototype.herokuapp.com/
 
 2019/2020: We created two HTML prototypes (1: TDR in TNA Design and 2: TDR in a Hybrid Design) as well as wireframes for MVP and POC and a few separate pages that you can find in this repository. Wireframes are built in Sketch and kept updated with a git plugin (see **workflow.md** for how it works). You can either clone this repository and keep working with git or you can download these files from here or Objective (Digital Archiving - Projects and products - Transfer Digital Records - Documentation - Design) and keep working locally on your computer and decide for yourself how you want to share your files with others.
