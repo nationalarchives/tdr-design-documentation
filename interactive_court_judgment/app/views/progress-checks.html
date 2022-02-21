@@ -14,7 +14,7 @@
         Checking your upload
       </h1>
 
-      <form class="form" action="/upload-confirmation" method="post">
+      <form class="form" action="/file-checks-results" method="post">
         
         <p class="govuk-body">Please wait whilst your court judgment is being checked for errors. This may take a
           few minutes. Once your record has been checked you will be redirected automatically.
@@ -27,7 +27,7 @@
 
 <script>
   function pageRedirect() {
-      window.location.replace("/upload-confirmation");
+      window.location.replace("/file-checks-results");
   }      
   setTimeout("pageRedirect()", 10000);
 </script>
