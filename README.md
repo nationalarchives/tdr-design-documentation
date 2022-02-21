@@ -32,7 +32,8 @@ We also created different prototypes for failure paths with Axure RP.
 6. ```git push```
 7. enter your password for veryifing your commit
 8. Go back to the toplevel directory ```cd ..```
-9. Set the app where you want to push your changes to so either:
+9. ```heroku login```
+10. Set the app where you want to push your changes to so either:
 ```heroku git:remote -a interactive_prototype``` or
 ```heroku git:remote -a interactive-court-judgment```
 10. Push to the appropriate heroku app
