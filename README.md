@@ -38,7 +38,7 @@ We also created different prototypes for failure paths with Axure RP.
 ```heroku git:remote -a interactive-court-judgment```
 10. Push to the appropriate heroku app
 ```git subtree push --prefix interactive_prototype heroku master``` or
-```git subtree push --prefix interactive_court_judgment heroku master```
+```git subtree push --prefix interactive_court_judgment heroku master``` or use main instead of master if you get a ref error
 
 
 2021: We use the GOVUK Prototype Kit for developing ideas, testing them out and also for user testing: https://tna-tdr-interactive-prototype.herokuapp.com/
