@@ -1,8 +1,27 @@
 # TDR Design Documentation (ALPHA & PRIVATE BETA)
+
 2022: We created several prototypes using the prototype kit.
-Success journey: (moved from https://tna-tdr-interactive-prototype.herokuapp.com/ to https://tdr-interactive-prototype.herokuapp.com/ to finally) https://interactive-tdr-prototype.herokuapp.com/dashboard with username and password 'tdr'.
-Metadata: https://tdr-metadata-prototype.herokuapp.com/ with username 'tdr' and password 'testing'.
-Court judgment: https://interactive-court-judgment.herokuapp.com/ with username 'court' and password 'judgment'.
+
+- Success journey: (moved from https://tna-tdr-interactive-prototype.herokuapp.com/ to https://tdr-interactive-prototype.herokuapp.com/ to finally) https://interactive-tdr-prototype.herokuapp.com/dashboard with username and password 'tdr'.
+
+- Metadata: https://tdr-metadata-prototype.herokuapp.com/ with username 'tdr' and password 'testing'.
+
+- Court judgment: https://interactive-court-judgment.herokuapp.com/ with username 'court' and password 'judgment'.
+
+We also created different prototypes for failure paths with Axure RP.
+
+- (5 viruses): https://3nb6jk.axshare.com/#c=2
+- (5 viruses + 20 zip): https://nexcve.axshare.com/#c=2
+- (30 password protected + 20 zip): https://vnvro3.axshare.com/#c=2
+- (all checksum): https://416ns5.axshare.com/#c=2
+
+- Two page design (virus + password protected + zip): https://umxa3g.axshare.com/#c=2 
+- (2 virus + 7 exe): https://36lln6.axshare.com/#c=2
+- (2 virus + 5 unidentified): https://dwyuaz.axshare.com/#c=2
+- (3 password protected + 5 unidentified): https://ktauij.axshare.com/#c=2
+- (5 virus + 30 unidentified): https://y69stm.axshare.com/#c=2
+- (30 unidentified): https://8phore.axshare.com/#c=2
+
 
 2021: We use the GOVUK Prototype Kit for developing ideas, testing them out and also for user testing: https://tna-tdr-interactive-prototype.herokuapp.com/
 
