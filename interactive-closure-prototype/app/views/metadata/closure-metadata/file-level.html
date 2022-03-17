@@ -1,0 +1,105 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  File level descriptive metadata
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-l">
+      Add or edit closure metadata on file basis
+    </h1>{{releaseVersion | log }}
+    <p class="govuk-body">You can now add or edit metadata for individual files or folders.</p>
+    <p class="govuk-body">Click on a particular file or folder to see what metadata is already captured and add or edit properties there. For editing multiple items, first select files and/or folders and then choose an action from the menu.</p>
+
+    <h2 class="app-task-list__section">Folder uploaded: Recipes and ingredients</h2>
+
+    <div class="govuk-button-group">
+      <button class="govuk-button govuk-button--secondary" data-module="govuk-button" type="button" name="selectAll"
+      value="select-all" onClick="check_all()">
+      Select all
+    </button>
+
+      <a href="#" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
+        Add closure properties
+      </a>
+    </div>
+
+    <table class="govuk-table">
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="Subfolder-Lemon-drizzle" name="organisation" type="checkbox"
+                value="hmrc">
+              <label class="govuk-label govuk-checkboxes__label" for="Subfolder-Lemon-drizzle">
+                <a href="#">📁 Recipes</a>
+              </label>
+            </div>
+          </td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="Subfolder-Chocolate-banana-bread" name="organisation"
+                type="checkbox" value="hmrc">
+              <label class="govuk-label govuk-checkboxes__label" for="Subfolder-Chocolate-banana-bread">
+                <a href="#">📁 Ingredients</a>
+              </label>
+            </div>
+          </td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" onchange="changeLink()" id="choc-chips" name="organisation" type="checkbox" value="cc"
+                     data-href="cc">
+              <label class="govuk-label govuk-checkboxes__label" for="choc-chips">
+                <a href="/file-summary-cc.html">🧾 Chocolate-chips.docx</a>
+              </label>
+            </div>
+          </td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="Cacao-powder" name="organisation" type="checkbox" value="hmrc">
+              <label class="govuk-label govuk-checkboxes__label" for="Cacao-powder">
+                <a href="#">📊 Cacao.xlsx</a>
+              </label>
+            </div>
+          </td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="flour" name="organisation" type="checkbox"
+                value="flour" onchange="changeLinkBack()">
+              <label class="govuk-label govuk-checkboxes__label" for="flour">
+                <a href="/file-summary-flour.html">🖼️ Flour.jpg</a>
+              </label>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <a href="closure-metadata.html" role="button" draggable="false" class="govuk-button govuk-button--secondary"
+       data-module="govuk-button">
+      Back to closure metadata menu
+    </a>
+
+  </div>
+</div>
+
+  <script type="text/javascript">
+function check_all() {
+  var checkboxes = document.getElementsByName('organisation');
+  checkboxes = [...checkboxes];
+  for (var i = 0; i < checkboxes.length; i++) {
+    checkboxes[i].checked = true
+  }
+}
+  </script>
+{% endblock %}
