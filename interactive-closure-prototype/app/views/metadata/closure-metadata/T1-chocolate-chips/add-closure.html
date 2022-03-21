@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-Add closure fields to file
+Add closure fields to 'Chocolate-chips.docx'
 {% endblock %}
 
 {% block content %}
@@ -10,13 +10,13 @@ Add closure fields to file
 <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
         <h1 class="govuk-heading-l">
-            Add closure fields to file
+            Add closure fields to 'Chocolate-chips.docx'
         </h1>{{releaseVersion | log }}
         <p class="govuk-body">Enter metadata for closure fields here.</p>
 
         <div class="govuk-form-group">
             <h2 class="govuk-label-wrapper"><label class="govuk-label govuk-label--m" for="event-name">
-                    FOI asserted
+                    FOI decision asserted
                 </label>
                 <div id="passport-issued-hint" class="govuk-hint">
                     Date of the Advisory Council Approval
@@ -29,7 +29,7 @@ Add closure fields to file
                             Day
                         </label>
                         <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day"
-                            name="passport-issued-day" type="text" pattern="[0-9]*" inputmode="numeric">
+                            name="passport-issued-day" type="text" pattern="[0-9]*" inputmode="numeric" placeholder="dd">
                     </div>
                 </div>
                 <div class="govuk-date-input__item">
@@ -39,7 +39,7 @@ Add closure fields to file
                         </label>
                         <input class="govuk-input govuk-date-input__input govuk-input--width-2"
                             id="passport-issued-month" name="passport-issued-month" type="text" pattern="[0-9]*"
-                            inputmode="numeric">
+                            inputmode="numeric" placeholder="mm">
                     </div>
                 </div>
                 <div class="govuk-date-input__item">
@@ -49,7 +49,7 @@ Add closure fields to file
                         </label>
                         <input class="govuk-input govuk-date-input__input govuk-input--width-4"
                             id="passport-issued-year" name="passport-issued-year" type="text" pattern="[0-9]*"
-                            inputmode="numeric">
+                            inputmode="numeric" placeholder="yyyy">
                     </div>
                 </div>
             </div>
@@ -63,7 +63,7 @@ Add closure fields to file
                     </h2>
                 </legend>
                 <div id="passport-issued-hint" class="govuk-hint">
-                    Date the file was last modified
+                    Date of the record from when the closure starts. It is usually the last date modified.
                 </div>
                 <div class="govuk-date-input" id="passport-issued">
                     <div class="govuk-date-input__item">
@@ -73,7 +73,7 @@ Add closure fields to file
                             </label>
                             <input class="govuk-input govuk-date-input__input govuk-input--width-2"
                                 id="passport-issued-day" name="passport-issued-day" type="text" pattern="[0-9]*"
-                                inputmode="numeric">
+                                inputmode="numeric" placeholder="dd">
                         </div>
                     </div>
                     <div class="govuk-date-input__item">
@@ -83,7 +83,7 @@ Add closure fields to file
                             </label>
                             <input class="govuk-input govuk-date-input__input govuk-input--width-2"
                                 id="passport-issued-month" name="passport-issued-month" type="text" pattern="[0-9]*"
-                                inputmode="numeric">
+                                inputmode="numeric" placeholder="mm">
                         </div>
                     </div>
                     <div class="govuk-date-input__item">
@@ -93,7 +93,7 @@ Add closure fields to file
                             </label>
                             <input class="govuk-input govuk-date-input__input govuk-input--width-4"
                                 id="passport-issued-year" name="passport-issued-year" type="text" pattern="[0-9]*"
-                                inputmode="numeric">
+                                inputmode="numeric" placeholder="yyyy">
                         </div>
                     </div>
                 </div>
@@ -125,16 +125,16 @@ Add closure fields to file
             </div>
             <div class="govuk-form-group">
                 <select class="govuk-select" id="sort" name="sort">
-                  <option value="please-choose" selected>Please choose...</option>
-                  <option value="40(2)">40(2)</option>
-                  <option value="38">38</option>
-                  <option value="37(1)">37(1)</option>
-                  <option value="37(2)">37(2)</option>
-                  <option value="36">36</option>
-                  <option value="33">33</option>
-                  <option value="43(1)">43(1)</option>
-                  <option value="43(2)">43(2)</option>
-                </select>
+                    <option value="please-choose" selected>Please choose...</option>
+                    <option value="33">33</option>
+                    <option value="36">36</option>
+                    <option value="37(1)">37(1)</option>
+                    <option value="37(2)">37(2)</option>
+                    <option value="38">38</option>
+                    <option value="40(2)">40(2)</option>
+                    <option value="43(1)">43(1)</option>
+                    <option value="43(2)">43(2)</option>
+                  </select>
               </div>
               <br/>
               <a href="#" class="govuk-link">Add another exemption code</a>
@@ -180,6 +180,7 @@ Add closure fields to file
 
 <script type="text/javascript">
     $(document).ready(function () {
+        $('#show-me').hide();
         $('#yes').click(function () {
             $('#show-me').show();
         });

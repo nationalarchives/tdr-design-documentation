@@ -26,10 +26,19 @@ File level closure metadata
       </a>
     </div>
 
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+    <input class="govuk-input" id="event-name" name="event-name" type="text" placeholder="Enter a file or folder name">
+      </div>
+      <div class="govuk-grid-column-one-third"></div>
+      <a href="file-level#page-2" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
+        Search
+      </a>
+    </div>
 
 
     <section id="page-1">
-      <p class="govuk-pagination__results">Showing <b>1</b> to <b>5</b> of <b>15</b> results</p>
+      <p class="govuk-pagination__results">Showing <b>1</b> to <b>5</b> of <b>2500</b> results</p>
       <table class="govuk-table">
         <tbody class="govuk-table__body">
           <tr class="govuk-table__row">
@@ -68,9 +77,9 @@ File level closure metadata
           <tr class="govuk-table__row">
             <td class="govuk-table__cell">
               <div class="govuk-checkboxes__item">
-                <input class="govuk-checkboxes__input" id="Cacao-powder" name="organisation" type="checkbox"
+                <input class="govuk-checkboxes__input" id="Flour" name="organisation" type="checkbox"
                   value="hmrc">
-                <label class="govuk-label govuk-checkboxes__label" for="Cacao-powder">
+                <label class="govuk-label govuk-checkboxes__label" for="Flour">
                   <a href="./T2-flour/open-flour.html">📊 Flour.docx</a>
                 </label>
               </div>
@@ -79,9 +88,9 @@ File level closure metadata
           <tr class="govuk-table__row">
             <td class="govuk-table__cell">
               <div class="govuk-checkboxes__item">
-                <input class="govuk-checkboxes__input" id="flour" name="organisation" type="checkbox" value="flour"
+                <input class="govuk-checkboxes__input" id="Lemonade" name="organisation" type="checkbox" value="flour"
                   onchange="changeLinkBack()">
-                <label class="govuk-label govuk-checkboxes__label" for="flour">
+                <label class="govuk-label govuk-checkboxes__label" for="Lemonade">
                   <a href="/file-summary-flour.html">🖼️ Lemonade.jpg</a>
                 </label>
               </div>
@@ -92,20 +101,9 @@ File level closure metadata
     </section>
 
     <section id="page-2">
-      <p class="govuk-pagination__results">Showing <b>6</b> to <b>10</b> of <b>15</b> results</p>
+      <p class="govuk-pagination__results">Showing <b>6</b> to <b>10</b> of <b>2500</b> results</p>
       <table class="govuk-table">
         <tbody class="govuk-table__body">
-          <tr class="govuk-table__row">
-            <td class="govuk-table__cell">
-              <div class="govuk-checkboxes__item">
-                <input class="govuk-checkboxes__input" id="Subfolder-Lemon-drizzle" name="organisation" type="checkbox"
-                  value="hmrc">
-                <label class="govuk-label govuk-checkboxes__label" for="Subfolder-Lemon-drizzle">
-                  <a href="#">📁 Cacao</a>
-                </label>
-              </div>
-            </td>
-          </tr>
           <tr class="govuk-table__row">
             <td class="govuk-table__cell">
               <div class="govuk-checkboxes__item">
@@ -113,6 +111,17 @@ File level closure metadata
                   type="checkbox" value="hmrc">
                 <label class="govuk-label govuk-checkboxes__label" for="Subfolder-Chocolate-banana-bread">
                   <a href="./T1-chocolate-chips/open-chocolate-chips.html">🧾 Chocolate-chips.docx</a>
+                </label>
+              </div>
+            </td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="Subfolder-Lemon-drizzle" name="organisation" type="checkbox"
+                  value="hmrc">
+                <label class="govuk-label govuk-checkboxes__label" for="Subfolder-Lemon-drizzle">
+                  <a href="#">📁 Cacao</a>
                 </label>
               </div>
             </td>
@@ -142,9 +151,9 @@ File level closure metadata
           <tr class="govuk-table__row">
             <td class="govuk-table__cell">
               <div class="govuk-checkboxes__item">
-                <input class="govuk-checkboxes__input" id="flour" name="organisation" type="checkbox" value="flour"
+                <input class="govuk-checkboxes__input" id="rolls" name="organisation" type="checkbox" value="flour"
                   onchange="changeLinkBack()">
-                <label class="govuk-label govuk-checkboxes__label" for="flour">
+                <label class="govuk-label govuk-checkboxes__label" for="rolls">
                   <a href="/file-summary-flour.html">🧾 Cinnamon-rolls.doc</a>
                 </label>
               </div>
@@ -155,7 +164,7 @@ File level closure metadata
     </section>
 
     <section id="page-3">
-      <p class="govuk-pagination__results">Showing <b>11</b> to <b>15</b> of <b>15</b> results</p>
+      <p class="govuk-pagination__results">Showing <b>11</b> to <b>15</b> of <b>2500</b> results</p>
 
       <table class="govuk-table">
         <tbody class="govuk-table__body">
@@ -206,9 +215,9 @@ File level closure metadata
           <tr class="govuk-table__row">
             <td class="govuk-table__cell">
               <div class="govuk-checkboxes__item">
-                <input class="govuk-checkboxes__input" id="flour" name="organisation" type="checkbox" value="flour"
+                <input class="govuk-checkboxes__input" id="cookies" name="organisation" type="checkbox" value="flour"
                   onchange="changeLinkBack()">
-                <label class="govuk-label govuk-checkboxes__label" for="flour">
+                <label class="govuk-label govuk-checkboxes__label" for="cookies">
                   <a href="/file-summary-flour.html">🖼️ Cookies.png</a>
                 </label>
               </div>
@@ -255,6 +264,7 @@ File level closure metadata
           <!-- </a> -->
         </li>
       </ul>
+      <br/>
 
     <a href="closure-metadata.html" role="button" draggable="false" class="govuk-button govuk-button--secondary"
       data-module="govuk-button">
@@ -315,6 +325,7 @@ File level closure metadata
 
     document.getElementById("next").href = "#page-" + (Number(selectedPage) + 1);
   }
+
 
 </script>
 {% endblock %}
