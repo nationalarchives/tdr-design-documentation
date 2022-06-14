@@ -56,7 +56,8 @@ const getPathFromProjectRoot = (...all) => {
 const pathToPackageConfigFile = packageName => getPathFromProjectRoot('node_modules', packageName, 'govuk-prototype-kit.config.json')
 
 const readJsonFile = (filePath) => {
-  return JSON.parse(fs.readFileSync(filePath, 'utf8'))
+  const a = fs.readFileSync(filePath, 'utf8')
+  return JSON.parse(a)
 }
 const getPackageConfig = packageName => {
   if (fs.existsSync(pathToPackageConfigFile(packageName))) {
