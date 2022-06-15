@@ -1,6 +1,5 @@
 /* eslint-env jest */
 /* eslint-disable no-prototype-builtins */
-/* global spyOn */
 // NPM dependencies
 const path = require('path')
 const fs = require('fs')
@@ -24,7 +23,7 @@ describe('extensions', () => {
       },
       fileSystem: {}
     }
-    addFileToMockFileSystem(['package.json'], fs.readFileSync('package.json', 'utf8'))
+    addFileToMockFileSystem(['package.json'], '{"dependencies": {"govuk-frontend": "v1"}}')
     addFileToMockFileSystem(['node_modules', 'govuk-frontend', 'govuk-prototype-kit.config.json'], '{"nunjucksPaths": ["/"],"scripts": ["/govuk/all.js"],"assets": ["/govuk/assets"],"sass": ["/govuk/all.scss"]}')
     setupFakeFilesystem()
     extensions.setExtensionsByType()
@@ -424,7 +423,7 @@ describe('extensions', () => {
       return (filePath).replace(rootPath + path.sep, '').split(path.sec)
     }
 
-    spyOn(fs, 'readFileSync').and.callFake(function (filePath) {
+    jest.spyOn(fs, 'readFileSync').mockImplementation(function (filePath) {
       const trimmedPath = prepFilePath(filePath)
       if (doesFileExitInMockFileSystem(trimmedPath)) {
         return readFileFromMockFileSystem(trimmedPath)
@@ -434,7 +433,7 @@ describe('extensions', () => {
         throw err
       }
     })
-    spyOn(fs, 'existsSync').and.callFake(filePath => doesFileExitInMockFileSystem(prepFilePath(filePath)))
+    jest.spyOn(fs, 'existsSync').mockImplementation(filePath => doesFileExitInMockFileSystem(prepFilePath(filePath)))
   }
 
   const addFileToMockFileSystem = (pathParts, content) => {

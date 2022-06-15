@@ -1,0 +1,18 @@
+name: TDR Run API tests
+on:
+  pull_request:
+  push:
+    branches-ignore:
+      - master
+      - release-*
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        prototype: ["interactive-closure-prototype", "interactive_prototype", "interactive_court_judgment"]
+    steps:
+      - uses: actions/checkout@v3
+      - run: |
+          npm --prefix ${{ matrix.prototype }} ci
+          npm --prefix ${{ matrix.prototype }} test
