@@ -1,14 +1,14 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-File level descriptive metadata
+Add or edit individual open records
 {% endblock %}
 
 {% block content %}
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
     <h1 class="govuk-heading-l">
-      Add or edit descriptive data on file basis
+      Add or edit metadata for open records
     </h1>{{releaseVersion | log }}
     <p class="govuk-body">You can now add or edit descriptive metadata to individual files or folders.</p>
     <p class="govuk-body">Click on a particular file or folder to see what metadata is already captured and add or edit properties there. For a bulk edit, first select files and/or folders and then choose an action from the menu.</p>
@@ -257,9 +257,9 @@ File level descriptive metadata
       </ul>
       <br/>
 
-    <a href="descriptive-metadata.html" role="button" draggable="false" class="govuk-button govuk-button--secondary"
+    <a href="../additional-metadata.html" role="button" draggable="false" class="govuk-button govuk-button--secondary"
       data-module="govuk-button">
-      Back to descriptive metadata menu
+      Back to overview
     </a>
 
   </div>

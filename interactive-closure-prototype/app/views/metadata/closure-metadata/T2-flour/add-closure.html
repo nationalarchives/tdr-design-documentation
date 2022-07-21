@@ -10,7 +10,7 @@ Add closure fields to 'Flour.docx'
 <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
         <h1 class="govuk-heading-l">
-            Add closure fields to 'Flour.docx'
+            Add closure metadata to 'Flour.docx'
         </h1>{{releaseVersion | log }}
         <p class="govuk-body">Enter metadata for closure fields here.</p>
 
@@ -25,11 +25,12 @@ Add closure fields to 'Flour.docx'
             <div class="govuk-date-input" id="passport-issued">
                 <div class="govuk-date-input__item">
                     <div class="govuk-form-group">
-                        <label class="govuk-label govuk-date-input__label" for="passport-issued-day" >
+                        <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
                             Day
                         </label>
                         <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day"
-                            name="passport-issued-day" type="text" pattern="[0-9]*" inputmode="numeric" placeholder="dd">
+                            name="passport-issued-day" type="text" pattern="[0-9]*" inputmode="numeric"
+                            placeholder="dd">
                     </div>
                 </div>
                 <div class="govuk-date-input__item">
@@ -59,7 +60,7 @@ Add closure fields to 'Flour.docx'
             <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
                 <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
                     <h2 class="govuk-label govuk-label--m">
-                        Closure start date
+                        Last modified date
                     </h2>
                 </legend>
                 <div id="passport-issued-hint" class="govuk-hint">
@@ -103,42 +104,78 @@ Add closure fields to 'Flour.docx'
 
         <div class="govuk-form-group">
             <h2 class="govuk-label-wrapper"><label class="govuk-label govuk-label--m" for="years">
-                Closure period
-            </label>
+                    Closure period
+                </label>
             </h2>
             <div id="closure-period-hint" class="govuk-hint">
                 Number of years the record is closed from the closure start date
             </div>
             <div class="govuk-input__wrapper"><input class="govuk-input govuk-input--width-5" id="years" name="years"
-                                                     type="text" spellcheck="false">
+                    type="text" spellcheck="false">
                 <div class="govuk-input__suffix" aria-hidden="true">years</div>
             </div>
         </div>
 
-        <div class="govuk-form-group">
+        <div class="govuk-form-group" id="codes">
             <h2 class="govuk-label-wrapper"><label class="govuk-label govuk-label--m" for="event-name">
-                FOI exemption code
-            </label>
+                    FOI exemption code
+                </label>
             </h2>
             <div id="foi-codes-hint" class="govuk-hint">
                 Select the exemption code that applies
             </div>
             <div class="govuk-form-group">
                 <select class="govuk-select" id="sort" name="sort">
-                  <option value="please-choose" selected>Please choose...</option>
-                  <option value="33">33</option>
-                  <option value="36">36</option>
-                  <option value="37(1)">37(1)</option>
-                  <option value="37(2)">37(2)</option>
-                  <option value="38">38</option>
-                  <option value="40(2)">40(2)</option>
-                  <option value="43(1)">43(1)</option>
-                  <option value="43(2)">43(2)</option>
+                    <option value="please-choose" selected>Please choose...</option>
+                    <option value="33">33</option>
+                    <option value="36">36</option>
+                    <option value="37(1)">37(1)</option>
+                    <option value="37(2)">37(2)</option>
+                    <option value="38">38</option>
+                    <option value="40(2)">40(2)</option>
+                    <option value="43(1)">43(1)</option>
+                    <option value="43(2)">43(2)</option>
+                    <option value="divider">---------</option>
+                    <option value="22">22</option>
+                    <option value="22a">22A</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="23/24">23/24 – In the alternative</option>
+                    <option value="26">26</option>
+                    <option value="27(1)">27(1)</option>
+                    <option value="27(2)">27(2)</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="31">31</option>
+                    <option value="32">32</option>
+                    <option value="34">34</option>
+                    <option value="35">35</option>
+                    <option value="37(1)(a)">37(1)(a)</option>
+                    <option value="37(1)(aa)">37(1)(aa)</option>
+                    <option value="37(1)(ab)">37(1)(ab)</option>
+                    <option value="37(1)(ac)">37(1)(ac)</option>
+                    <option value="37(1)(ad)">37(1)(ad)</option>
+                    <option value="37(1)(b)">37(1)(b)</option>
+                    <option value="37(2)">37(2)</option>
+                    <option value="39">39</option>
+                    <option value="40">40</option>
+                    <option value="41">41</option>
+                    <option value="42">42</option>
+                    <option value="43(1)">43(1)</option>
+                    <option value="43(2)">43(2)</option>
+                    <option value="44">44</option>
+                    <option value="divider">---------</option>
+                    <option value="EIRs 12(3) & 13">EIRs 12(3) & 13</option>
+                    <option value="EIR 12(5)(a)">EIR 12(5)(a)</option>
+                    <option value="EIR 12(5)(b)">EIR 12(5)(b)</option>
+                    <option value="EIR 12(5)(c)">EIR 12(5)(c)</option>
+                    <option value="EIR 12(5)(d)">EIR 12(5)(d)</option>
+                    <option value="EIR 12(5)(e)">EIR 12(5)(e)</option>
+
                 </select>
-              </div>
-              <br/>
-              <a href="#" class="govuk-link">Add another exemption code</a>
+            </div>
         </div>
+        <p id="AnotherExemptionCode" class="govuk-link">Add another exemption code</p>
 
         <div class="govuk-form-group">
             <fieldset class="govuk-fieldset">
@@ -147,13 +184,15 @@ Add closure fields to 'Flour.docx'
                 </legend>
                 <div class="govuk-radios">
                     <div class="govuk-radios__item">
-                        <input class="govuk-radios__input" id="yes" name="is-the-title-sensitive" type="radio" value="yes">
+                        <input class="govuk-radios__input" id="yes" name="is-the-title-sensitive" type="radio"
+                            value="yes">
                         <label class="govuk-label govuk-radios__label" for="yes">
                             Yes
                         </label>
                     </div>
                     <div class="govuk-radios__item">
-                        <input class="govuk-radios__input" id="no" name="is-the-title-sensitive" type="radio" value="no">
+                        <input class="govuk-radios__input" id="no" name="is-the-title-sensitive" type="radio"
+                            value="no">
                         <label class="govuk-label govuk-radios__label" for="no">
                             No
                         </label>
@@ -164,7 +203,7 @@ Add closure fields to 'Flour.docx'
         <div id="show-me">
             <div class="govuk-form-group">
                 <h2 class="govuk-label-wrapper"><label class="govuk-label govuk-label--m" for="event-name">
-                    Alternative Title
+                        Alternative Title
                     </label>
                 </h2>
                 <input class="govuk-input" id="event-name" name="event-name" type="text">
@@ -188,6 +227,15 @@ Add closure fields to 'Flour.docx'
             $('#show-me').hide();
         });
     });
+
+    src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" >
+        $('#AnotherExemptionCode').on('click', function () {
+
+            $('#codes').append('<div class="govuk-form-group"> <select class="govuk-select" id="sort" name="sort"><option value="please-choose" selected>Please choose...</option> <option value="33">33</option><option value="36">36</option><option value="37(1)">37(1)</option><option value="37(2)">37(2)</option><option value="38">38</option><option value="40(2)">40(2)</option><option value="43(1)">43(1)</option><option value="43(2)">43(2)</option></select></div>');
+        });
 </script>
+
+
+
 
 {% endblock %}
