@@ -1,0 +1,17 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/interactive-closure-prototype"
+    schedule:
+      interval: "daily"
+    versioning-strategy: increase
+  - package-ecosystem: "npm"
+    directory: "/interactive_prototype"
+    schedule:
+      interval: "daily"
+    versioning-strategy: increase
+  - package-ecosystem: "npm"
+    directory: "/interactive_court_judgment"
+    schedule:
+      interval: "daily"
+    versioning-strategy: increase
