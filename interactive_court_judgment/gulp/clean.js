@@ -5,12 +5,14 @@
     - public
 */
 
-const del = require('del')
 const gulp = require('gulp')
 
 const config = require('./config.json')
 
 gulp.task('clean', function (done) {
-  return del([config.paths.public + '/*',
-    '.port.tmp'])
+  import('del').then(del => {
+    del.deleteSync([config.paths.public + '/*',
+      '.port.tmp'])
+    done()
+  })
 })
