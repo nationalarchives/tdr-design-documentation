@@ -4,7 +4,6 @@ const fs = require('fs')
 const os = require('os')
 
 // NPM dependencies
-const inquirer = require('inquirer')
 const universalAnalytics = require('universal-analytics')
 const { v4: uuidv4 } = require('uuid')
 
@@ -38,14 +37,15 @@ exports.setUsageDataConfig = function (usageDataConfig) {
 exports.askForUsageDataPermission = function () {
   return new Promise(function (resolve, reject) {
     const description = fs.readFileSync(path.join(__dirname, 'usage-data-prompt.txt'), 'utf8').trim()
-
-    inquirer.prompt([{
-      name: 'usageData',
-      message: description,
-      type: 'confirm',
-      when: () => process.stdout.isTTY,
-      default: false
-    }]).then(answers => resolve(answers.usageData))
+    import('inquirer').then(inquirer => {
+      inquirer.prompt([{
+        name: 'usageData',
+        message: description,
+        type: 'confirm',
+        when: () => process.stdout.isTTY,
+        default: false
+      }]).then(answers => resolve(answers.usageData))
+    })
   })
 }
 
