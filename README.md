@@ -1,3 +1,7 @@
+> 🚨 **TDR Design Documentation moved to [Github Wiki](./wiki)**: See below for previous documentation
+
+--
+
 # TDR Design Documentation (ALPHA & PRIVATE BETA)
 
 2022: We created several prototypes using the prototype kit.
