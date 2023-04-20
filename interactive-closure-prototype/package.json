@@ -39,7 +39,7 @@
     "marked": "^4.3.0",
     "nhsuk-frontend": "^7.0.0",
     "notifications-node-client": "^7.0.0",
-    "nunjucks": "^3.2.3",
+    "nunjucks": "^3.2.4",
     "portscanner": "^2.2.0",
     "require-dir": "^1.2.0",
     "sync-request": "^6.1.0",
