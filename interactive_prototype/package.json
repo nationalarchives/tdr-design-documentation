@@ -37,7 +37,7 @@
     "inquirer": "^9.2.8",
     "keypather": "^3.1.0",
     "marked": "^5.1.1",
-    "notifications-node-client": "^7.0.2",
+    "notifications-node-client": "^7.0.3",
     "nunjucks": "^3.2.4",
     "portscanner": "^2.2.0",
     "require-dir": "^1.2.0",
