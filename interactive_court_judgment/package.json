@@ -36,7 +36,7 @@
     "gulp-sourcemaps": "^3.0.0",
     "inquirer": "^9.2.9",
     "keypather": "^3.1.0",
-    "marked": "^7.0.2",
+    "marked": "^7.0.4",
     "notifications-node-client": "^7.0.3",
     "nunjucks": "^3.2.4",
     "portscanner": "^2.2.0",
@@ -52,7 +52,7 @@
   },
   "devDependencies": {
     "glob": "^10.3.3",
-    "jest": "^29.6.2",
+    "jest": "^29.6.3",
     "node-sass": "^8.0.0",
     "standard": "^17.1.0",
     "supertest": "^6.3.3"
