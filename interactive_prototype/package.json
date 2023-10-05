@@ -36,7 +36,7 @@
     "gulp-sourcemaps": "^3.0.0",
     "inquirer": "^9.2.9",
     "keypather": "^3.1.0",
-    "marked": "^9.0.3",
+    "marked": "^9.1.0",
     "notifications-node-client": "^7.0.3",
     "nunjucks": "^3.2.4",
     "portscanner": "^2.2.0",
