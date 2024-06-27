@@ -12,7 +12,7 @@
     "test": "npm run lint && gulp generate-assets && jest"
   },
   "dependencies": {
-    "acorn": "^8.11.2",
+    "acorn": "^8.12.0",
     "ansi-colors": "^4.1.3",
     "basic-auth": "^2.0.1",
     "basic-auth-connect": "^1.0.0",
@@ -36,14 +36,14 @@
     "gulp-sourcemaps": "^3.0.0",
     "inquirer": "^9.2.23",
     "keypather": "^3.1.0",
-    "marked": "^12.0.2",
+    "marked": "^13.0.1",
     "notifications-node-client": "^8.1.0",
     "nunjucks": "^3.2.4",
     "portscanner": "^2.2.0",
     "require-dir": "^1.2.0",
     "sync-request": "^6.1.0",
     "universal-analytics": "^0.5.3",
-    "uuid": "^9.0.0"
+    "uuid": "^10.0.0"
   },
   "greenkeeper": {
     "ignore": [
